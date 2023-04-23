@@ -1,0 +1,56 @@
+.post-table{
+    border: solid 2px  rgb(179, 178, 178);
+    width: 90%;
+    text-align: center !important;
+    margin: auto;
+    margin-top: 50px !important;
+}
+.spantext{
+    margin-left: -10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 922px) {
+    .main-form {
+      padding: 20px 10px 20px 10px !important;
+      
+    }
+    .addCa{
+      /* margin: auto; */
+      margin-left: 100px;
+    }
+  
+    .M-div {
+      width: 90%;
+      height: 10% !important;
+      border: solid 1px gray;
+    }
+    .btns {
+      width: 100px;
+      border-radius: 4px;
+      background-color: white;
+      border: 2px solid gray;
+      margin-top: -1px;
+      margin-left: -5px;
+    }
+    .next-btn {
+      width: 100px;
+      border-radius: 4px;
+      background-color: white;
+      border: 2px solid gray;
+      margin-top: -1px;
+      margin-left: -10px;
+  
+  
+    
+    }
+  }

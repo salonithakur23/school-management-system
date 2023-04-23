@@ -1,0 +1,104 @@
+{
+  "stationarys": [
+    {
+      "iname": "Hindi Book",
+      "icate": "3",
+      "company": "NCRT",
+      "board": "CBSC",
+      "rate": "600",
+      "stock": "1000",
+      "date": "2023-04-20",
+      "id": 2
+    },
+    {
+      "iname": "English book",
+      "icate": "1",
+      "company": "NCRT",
+      "board": "CBSC",
+      "rate": "300",
+      "stock": "1000",
+      "date": "2023-04-03",
+      "id": 3
+    },
+    {
+      "iname": "Math book",
+      "icate": "1",
+      "company": "NCRT",
+      "board": "CBSC",
+      "rate": "400",
+      "stock": "1000",
+      "date": "2023-04-05",
+      "id": 4
+    },
+    {
+      "iname": "G.K",
+      "icate": "3",
+      "company": "NCRT",
+      "board": "CBSC",
+      "rate": "450",
+      "stock": "1000",
+      "date": "2023-04-15",
+      "id": 5
+    },
+    {
+      "iname": "Drawing",
+      "icate": "5",
+      "company": "NCRT",
+      "board": "CBSC",
+      "rate": "500",
+      "stock": "1000",
+      "date": "2023-04-11",
+      "id": 6
+    },
+    {
+      "iname": "Rhyms",
+      "icate": "3",
+      "company": "NCRT",
+      "board": "CBSC",
+      "rate": "350",
+      "stock": "700",
+      "date": "2023-04-12",
+      "id": 7
+    },
+    {
+      "iname": "Pen",
+      "icate": "7",
+      "company": "Uniflow",
+      "board": "CBSC",
+      "rate": "105",
+      "stock": "3000",
+      "date": "2023-04-09",
+      "id": 8
+    },
+    {
+      "iname": "Pencil",
+      "icate": "2",
+      "company": "Staedtler",
+      "board": "CBSC",
+      "rate": "20",
+      "stock": "5000",
+      "date": "2023-04-11",
+      "id": 9
+    },
+    {
+      "iname": " erasier",
+      "icate": "5",
+      "company": " Most Durable",
+      "board": "cbsc",
+      "rate": "100",
+      "stock": "2000",
+      "date": "2023-04-06",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

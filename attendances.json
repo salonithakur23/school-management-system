@@ -1,0 +1,62 @@
+{
+  "attendances": [
+    {
+      "rollno": "1",
+      "stuname": "saloni Thakur",
+      "date": "20-04-2023",
+      "id": 1
+    },
+    {
+      "rollno": "2",
+      "stuname": "pooja mishra",
+      "date": "20-04-2023",
+
+      "id": 2
+    },
+    {
+      "rollno": "3",
+      "stuname": "Aman Saini",
+      "date": "20-04-2023",
+
+      "id": 3
+    },
+    {
+      "rollno": "4",
+      "stuname": "Lalit saini",
+      "date": "20-04-2023",
+
+      "id": 4
+    },
+    {
+      "rollno": "5",
+      "stuname": "Deepak kumar",
+      "date": "20-04-2023",
+
+      "id": 5
+    },
+    {
+      "rollno": "6",
+      "stuname": "Prerna",
+      "date": "20-04-2023",
+
+      "id": 6
+    },
+    {
+      "rollno": "7",
+      "stuname": "Kuku",
+      "date": "20-04-2023",
+
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,49 @@
+/* .Alabal{
+
+} */
+.cbox{
+  margin-top: 50px !important;
+  margin-left: -100px !important;
+}
+.Blabel{
+    margin-left: -90%;
+}
+.TForm{
+    width: 90%;
+    height: 100%;
+    margin: auto !important;
+    margin-top: 70px !important;
+}.i{
+    margin-left: 32px !important;
+    margin-top: 30px;
+    width: 30%;
+    height: 35px;
+
+}
+.spaT{
+    margin-left: 50px;
+}
+.spaT2{
+    margin-left: 100px;
+}
+.model{
+    padding-left: 100px;
+
+}
+.mod-img{
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    margin-left: 50px;
+}
+.img-text{
+    padding-left: 150px;
+}
+
+
+@media screen and (min-width: 480px) {
+    .model{
+        padding-left: -70px;
+    
+    }
+  }

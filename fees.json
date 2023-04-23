@@ -1,0 +1,64 @@
+{
+  "feeses": [
+   
+
+    {
+      "sname": "Seema",
+      "cname": "B.AC",
+      "rollno": "35",
+      "regno": "467",
+      "regfee": "4566",
+      "monfee": "537",
+      "examfee": "3456",
+      "compufee": "456",
+      "paymethod": "Cash",
+      "address": "Chadusi",
+      "remark": "hjkl",
+      "fname": "Suresh singh",
+      "mname": "Omwati devi",
+      "id": 16
+    },
+    {
+      "sname": "Mamta Kumari",
+      "cname": "12th",
+      "rollno": "35",
+      "regno": "467",
+      "regfee": "4566",
+      "monfee": "537",
+      "examfee": "3456",
+      "compufee": "456",
+      "paymethod": "cash",
+      "address": "Devipura",
+      "remark": "hjkl",
+      "fname": "Kunvarpal singh",
+      "mname": "Viran",
+      "id": 9
+    },
+    {
+      "sname": "Aman Saini",
+      "cname": "BCA",
+      "rollno": "35",
+      "regno": "467",
+      "regfee": "4566",
+      "monfee": "537",
+      "examfee": "3456",
+      "compufee": "456",
+      "paymethod": "Cash",
+      "address": "mbd",
+      "remark": "hjkl",
+      "fname": "Bhukan Saini",
+      "mname": "meenu Devi",
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

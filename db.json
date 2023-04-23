@@ -1,0 +1,106 @@
+{
+  "posts": [
+    {
+      "sr": "1",
+      "firstname": "Shivani ",
+      "lastname": "Tiwari",
+      "doa": "20/04/2023",
+      "cla": "1st",
+      "dob": "01/02/2018",
+      "age": "5",
+      "gender": "Female",
+      "board": "CBSC",
+      "aadhar": "789475990096",
+      "contact": "9045772340",
+      "category": "Gernal",
+      "father": "Dharmendra Tiwari",
+      "mother": "Preeti Tiwari",
+      "foccupation": "Private Job",
+      "moccupation": "House Wife",
+      "presentaddress": "Linepar",
+      "permanentaddress": "Linepar ",
+      "city": "Moradabad",
+      "religion": "Hindu",
+      "id": 1
+    },
+     {
+      "sr": "2",
+      "firstname": "Mahima ",
+      "lastname": "Choudhry",
+      "doa": "20/04/2023",
+      "cla": "4st",
+      "dob": "01/02/2018",
+      "age": "9",
+      "gender": "Female",
+      "board": "CBSC",
+      "aadhar": "789475990096",
+      "contact": "9045772340",
+      "category": "Gernal",
+      "father": "Dharmendra Tiwari",
+      "mother": "Preeti Tiwari",
+      "foccupation": "Government Job",
+      "moccupation": "House Wife",
+      "presentaddress": "Linepar",
+      "permanentaddress": "Linepar ",
+      "city": "Moradabad",
+      "religion": "Hindu",
+      "id": 2
+    }
+    ,{
+      "sr": "3",
+      "firstname": "Amit ",
+      "lastname": "kumar",
+      "doa": "20/04/2023",
+      "cla": "5th",
+      "dob": "01/02/2018",
+      "age": "11",
+      "gender": "male",
+      "board": "CBSC",
+      "aadhar": "789475990096",
+      "contact": "9045772340",
+      "category": "Gernal",
+      "father": "Dharmendra Tiwari",
+      "mother": "Preeti Tiwari",
+      "foccupation": "Gernal Store",
+      "moccupation": "Teacher",
+      "presentaddress": "Linepar",
+      "permanentaddress": "Linepar ",
+      "city": "Moradabad",
+      "religion": "Hindu",
+      "id": 3
+    },
+    {
+      "sr": "4",
+      "firstname": "Salman ",
+      "lastname": "Saifi",
+      "doa": "20/04/2023",
+      "cla": "Nurssury",
+      "dob": "01/02/2018",
+      "age": "3",
+      "gender": "male",
+      "board": "CBSC",
+      "aadhar": "789475990096",
+      "contact": "9045772340",
+      "category": "Gernal",
+      "father": "Saleem Khan",
+      "mother": "Ujra Khan",
+      "foccupation": "Private Job",
+      "moccupation": "Teacher",
+      "presentaddress": "Linepar",
+      "permanentaddress": "Linepar ",
+      "city": "Moradabad",
+      "religion": "Muslim",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

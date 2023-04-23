@@ -1,0 +1,35 @@
+@media screen and (min-width: 300px) and (max-width: 922px) {
+    .main-form {
+      padding: 20px 10px 20px 10px !important;
+      
+    }
+    .addCa{
+      /* margin: auto; */
+      margin-left: 100px;
+    }
+  
+    .M-div {
+      width: 90%;
+      height: 10% !important;
+      border: solid 1px gray;
+    }
+    .btns {
+      width: 100px;
+      border-radius: 4px;
+      background-color: white;
+      border: 2px solid gray;
+      margin-top: -1px;
+      margin-left: -5px;
+    }
+    .next-btn {
+      width: 100px;
+      border-radius: 4px;
+      background-color: white;
+      border: 2px solid gray;
+      margin-top: -1px;
+      margin-left: -10px;
+  
+  
+    
+    }
+  }

@@ -1,0 +1,117 @@
+{
+  "transports": [
+    {
+      "busname": "Mh-1 ",
+      "drivername": "Promod ",
+      "conductorname": "Bunty Kumar",
+      "dvrivernob": "3456789043",
+      "conductornob": "908765432",
+      "totalstdnt": "55",
+      "busroute": "Rampur Road",
+      "stuname": "Kavita kumari",
+      "stuaddress": "Pitalnagri/gali No.3",
+      "fname": "Sameer Kumar",
+      "picpoint":"Pitalnagri",
+      "pictime":"7:20 AM",
+      "distance":"3KM",
+      "charge":"2000",
+      "id": 1
+    },
+    {
+      "busname": "Mh-1 ",
+      "drivername": "Promod ",
+      "conductorname": "Bunty Kumar",
+      "dvrivernob": "3456789043",
+      "conductornob": "908765432",
+      "totalstdnt": "50",
+      "busroute": "TMU",
+      "stuname": "Chhavi kumari",
+      "stuaddress": "Mansarover/gali No-3",
+      "fname": "Kunverpal",
+      "picpoint":"Mansarover",
+      "pictime":"7:10 AM",
+      "distance":"2Km",
+      "charge":"1700",
+      "id": 2
+    },
+    {
+      "busname": "Mh-1 ",
+      "drivername": "Promod ",
+      "conductorname": "Bunty Kumar",
+      "dvrivernob": "3456789043",
+      "conductornob": "908765432",
+      "totalstdnt": "40",
+      "busroute": "MDA Colony",
+      "stuname": "Kaja Sharma",
+      "stuaddress": "pakhbada/chow",
+      "fname": " Vishu Sharma",
+      "picpoint":"Padkhbada point",
+      "pictime":"7:40 AM",
+      "distance":"4Km",
+      "charge":"3000",
+      "id": 3
+    },
+    {
+      "busname": "Mh-1 ",
+      "drivername": "Promod ",
+      "conductorname": "Bunty Kumar",
+      "dvrivernob": "3456789043",
+      "conductornob": "908765432",
+      "totalstdnt": "30",
+      "busroute": "Mansarover",
+      "stuname": "Dharmendra tiwari",
+      "stuaddress": "Shreefnagar",
+      "fname": "Pankaj Tiwari",
+      "picpoint":"Thakurdwara",
+      "pictime":"7:50 AM",
+      "distance":"8Km",
+      "charge":"3200",
+      "id": 4
+    },
+    {
+      "busname": "Mh-1 ",
+      "drivername": "Promod ",
+      "conductorname": "Bunty Kumar",
+      "dvrivernob": "3456789043",
+      "conductornob": "908765432",
+      "totalstdnt": "54",
+      "busroute": "Delhi Road",
+      "stuname": "Saloni Thakur",
+      "stuaddress": "Mansarover/ Gali No.1/2",
+      "fname": "Suresh Singh",
+      "picpoint":"Mansarover Paradise",
+      "pictime":"7:15 AM",
+      "distance":"2Km",
+      "charge":"1700",
+      "id": 5
+    },
+    {
+      "busname": "Mh-1 ",
+      "drivername": "Promod ",
+      "conductorname": "Bunty Kumar",
+      "dvrivernob": "3456789043",
+      "conductornob": "908765432",
+      "totalstdnt": "66",
+      "busroute": "sadar Chowk",
+      "stuname": "Pooja Mishra",
+      "stuaddress": "Ramlila Graound",
+      "fname": "JP Mishra",
+      "picpoint":"Prakash Nagar Chowk",
+      "pictime":"7:00 AM",
+      "distance":"3Km",
+      "charge":"1800",
+      "id": 6
+    }
+  
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
