@@ -6,6 +6,10 @@ import AttendanceSlice from './Attendance/AttendanceSlice'
 import TransPostSlice from './TransPortSlice/TransPostSlice'
 import ResultSlice from './ResultSlice/ResultSlice'
 import StationarySlice from './Stationary/StationarySlice'
+import TeacherSlice from './TeacherSlice/TeacherSlice'
+import TimetableSlice from './Timetable/TimetableSlice'
+import SalarySlice from './SalarySlice/SalarySlice'
+import LeaveSlice from './LeaveSlice/LeaveSlice'
 
 
 
@@ -18,6 +22,13 @@ export default configureStore({
     attendances:AttendanceSlice,
     transports:TransPostSlice,
     results:ResultSlice,
-    stationarys:StationarySlice 
+    stationarys:StationarySlice,
+
+
+    details:TeacherSlice,
+    times:TimetableSlice,
+    sallerys:SalarySlice,
+    leaves:LeaveSlice
+
   }
 }) 

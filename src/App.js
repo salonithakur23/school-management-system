@@ -29,6 +29,14 @@ import ResultList from "./components/Result/ResultList";
 import StationaryForm from "./components/Stationary/StatonaryForm";
 import StationaryList from "./components/Stationary/StationaryList";
 import HolidayForm from "./components/Holidays/HolidayForm";
+import TeacherForm from "./components/Teacher/allteacher/TeacherForm";
+import DetailList from "./components/Teacher/allteacher/DetailList";
+import TimeTable from "./components/time-table/nur-ukg/TimeTable";
+import TableList from "./components/time-table/nur-ukg/TableList";
+import SalleryForm from "./components/sallery/SalleryForm";
+import SalleryList from "./components/sallery/SalleryList";
+import LeaveForm from "./components/leave/LeaveForm";
+import LeaveList from "./components/leave/LeaveList";
 
 
 
@@ -312,6 +320,116 @@ function App() {
                 </PrivateRoute>
               }
             />
+
+
+
+            <Route
+              exact
+              path="/teacherform"
+              element={
+                <PrivateRoute>
+                  <Sidebar>
+                    <TeacherForm />
+                  </Sidebar>
+                </PrivateRoute>
+              }
+            />
+
+
+
+            <Route
+              exact
+              path="/detaillist"
+              element={
+                <PrivateRoute>
+                  <Sidebar>
+                    <DetailList />
+                  </Sidebar>
+                </PrivateRoute>
+              }
+            />
+
+            <Route
+              exact
+              path="/timetable"
+              element={
+                <PrivateRoute>
+                  <Sidebar>
+                    <TimeTable />
+                  </Sidebar>
+                </PrivateRoute>
+              }
+            />
+
+            <Route
+              exact
+              path="/tablelist"
+              element={
+                <PrivateRoute>
+                  <Sidebar>
+                    <TableList />
+                  </Sidebar>
+                </PrivateRoute>
+              }
+            />
+
+
+            <Route
+              exact
+              path="/salleryform"
+              element={
+                <PrivateRoute>
+                  <Sidebar>
+                    <SalleryForm />
+                  </Sidebar>
+                </PrivateRoute>
+              }
+            />
+
+            <Route
+              exact
+              path="/sallerylist"
+              element={
+                <PrivateRoute>
+                  <Sidebar>
+                    <SalleryList />
+                  </Sidebar>
+                </PrivateRoute>
+              }
+            />
+
+
+            <Route
+              exact
+              path="/leaveform"
+              element={
+                <PrivateRoute>
+                  <Sidebar>
+                    <LeaveForm />
+                  </Sidebar>
+                </PrivateRoute>
+              }
+            />
+
+            <Route
+              exact
+              path="/leavelist"
+              element={
+                <PrivateRoute>
+                  <Sidebar>
+                    <LeaveList />
+                  </Sidebar>
+                </PrivateRoute>
+              }
+            />
+
+
+
+
+
+
+
+
 
 
 

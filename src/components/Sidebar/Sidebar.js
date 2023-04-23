@@ -3,9 +3,10 @@ import { FaBars,FaBookReader, FaTh, FaWpforms, } from 'react-icons/fa'
 import {  AiOutlineOrderedList, AiOutlineProfile } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import './Sidebar.css'
-import { GiArchiveRegister } from "react-icons/gi";
+import { GiArchiveRegister, GiTimeBomb } from "react-icons/gi";
 import { MdOutlineAppRegistration, MdOutlineEmojiTransportation, MdOutlineHolidayVillage } from "react-icons/md";
 import { BsFillBookFill } from 'react-icons/bs';
+import { SiWebmoney,SiTrendmicro } from 'react-icons/si'
 
 
 
@@ -32,11 +33,11 @@ const Sidebar = ({children}) => {
       icon: <AiOutlineOrderedList />
     },
    
-    {
-      path: "/Registration",
-      name: "Registraion",
-      icon: <MdOutlineAppRegistration />
-    },
+    // {
+    //   path: "/Registration",
+    //   name: "Registraion",
+    //   icon: <MdOutlineAppRegistration />
+    // },
 
     {
       path: "/attendance",
@@ -58,11 +59,35 @@ const Sidebar = ({children}) => {
       name: "Stationary",
       icon: <BsFillBookFill />
     },
+
     {
-      path: "/holiday",
-      name: "HoliDays",
-      icon: <MdOutlineHolidayVillage />
+      path: "/teacherform",
+      name: "Teacher",
+      icon: <GiArchiveRegister />,
     },
+
+    {
+      path: "/timetable",
+      name: "Time-Table",
+      icon: <GiTimeBomb />,
+    },
+
+    {
+      path: "/salleryform",
+      name: "Sallery",
+      icon: <SiWebmoney />,
+    },
+
+    {
+      path: "/leaveform",
+      name: "Leave",
+      icon: <SiTrendmicro />,
+    },
+    // {
+    //   path: "/holiday",
+    //   name: "HoliDays",
+    //   icon: <MdOutlineHolidayVillage />
+    // },
     // {
     //   path: "/createpost",
     //   name: "CreatePost",

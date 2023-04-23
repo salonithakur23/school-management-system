@@ -713,3 +713,65 @@ p {
   font-size: 20px;
   color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pooja csss */
+*{
+  font-family: sans-serif !important;
+}
+
+.main-table{
+text-align: left;
+margin-top: 15px;
+} 
+
+
+.tableOption{
+  width: 20% !important;
+}
+
+.form-div{
+  padding: 20px;
+  border: 1px solid;
+  margin: 10px;
+
+}
+.table-div{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.table-btn{
+  text-align: left;
+  margin-left: 10px;
+  border: 1px solid;
+
+}
+
