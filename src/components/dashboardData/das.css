@@ -1,4 +1,58 @@
-.das-texts{
+
+*{
+  font-family: sans-serif !important;
+ }
+ .dashboardCard {
+     justify-content: space-evenly;
+     background: rgb(131, 58, 180);
+     background: #74ebd5;
+     background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+     background: linear-gradient(to right, #ACB6E5, #74ebd5);
+     border-radius: 20px;
+     padding: 10px;
+     margin: 10px;
+     box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.75);
+     -webkit-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.75);
+ }
+
+ .dashboard {
+     justify-content: space-evenly;
+     padding: 10px;
+ }
+
+ .dashboardCardHeading {
+     text-align: center;
+ }
+
+ .dashboardCardHeading h3 {
+     font-weight: 800;
+ }
+
+ .dassboardCardQuantity {
+     text-align: center;
+     font-style: bold;
+ }
+
+ .dashboardCardIcon {
+     font-size: 6rem !important;
+     text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .das-texts{
     text-align: center !important;
     color: rgb(19, 110, 146);
     font-family: serif;
@@ -17,34 +71,19 @@
 .img-BBox{
   width: 400px;
   height:400px;
-  /* background-color: gray; */
   border-radius: 400px;
   margin: auto !important;
-  /* margin-top: 10px !important; */
-}
+  
+} */
 
 
 
-@media screen and (min-width: 300px) and (max-width: 922px) {
+/* @media screen and (min-width: 300px) and (max-width: 922px) {
 
   .addCa{
-    /* margin: auto; */
     margin-left: 100px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .CompactCard {
     display: flex;
@@ -58,10 +97,10 @@
   }
   .CompactCard:hover {
     box-shadow: none !important;
-  }
+  } */
   
   /* radial bar */
-  .radialBar {
+  /* .radialBar {
     flex: 1 1;
     display: flex;
     flex-direction: column;
@@ -87,10 +126,10 @@
   .radialBar > span {
     font-size: 17px;
     font-weight: bold;
-  }
+  } */
   
   /* sideDetail*/
-  .detail {
+  /* .detail {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -104,10 +143,10 @@
   }
   .detail > span:nth-child(3) {
     font-size: 12px;
-  }
+  } */
   
   /* ExpandedCard */
-  .ExpandedCard {
+  /* .ExpandedCard {
     position: absolute;
     width: 60%;
     height: 70vh;
@@ -150,5 +189,5 @@
       left: 25px;
       width: 80%;
     }
-  }
+  } */
   
