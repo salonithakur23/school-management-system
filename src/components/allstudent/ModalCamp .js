@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { VscStarFull } from "react-icons/vsc";
 // import "./pages.css";
 
 
@@ -49,32 +50,49 @@ const ModalCamp = ({
         <Modal.Body>
           <Container>
             <Row>
-              <Col sm={4} >
 
-                <p> <b>SR No:</b> <span className="spaT" >{sr}</span></p>
-                <p> <b>First name</b> <span className="spaT" >{firstname}</span></p>
-                <p> <b>Last name</b> <span className="spaT" >{lastname}</span></p>
-                <p> <b>DOA</b> <span className="spaT" >{doa}</span></p>
-                <p> <b>Class</b> <span className="spaT" >{cla}</span></p>
-                <p> <b>DOB</b> <span className="spaT" >{dob}</span></p>
-                <p> <b>Gender</b> <span className="spaT" >{gender}</span></p>
-                <p> <b>Board</b> <span className="spaT" >{board}</span></p>
-                <p> <b>Sibling</b> <span className="spaT" >{sibling}</span></p>
-                <p> <b>Aadhar no</b> <span className="spaT" >{aadhar}</span></p>
-              </Col>
+              <Col sm={4}>
 
-              <Col sm={4} >
+                <div className="modal-stu" >
+                  <h5> <VscStarFull /> Personal Details</h5>
+                  <hr />
 
-                <p> <b>Contact no</b> <span className="spaT" >{contact}</span></p>
-                <p> <b>Category</b> <span className="spaT" >{category}</span></p>
-                <p> <b>Father name</b> <span className="spaT" >{father}</span></p>
-                <p> <b>Mother name</b> <span className="spaT" >{mother}</span></p>
-                <p> <b>Father's Occupation</b> <span className="spaT" >{foccupation}</span></p>
-                <p> <b>Mother's Occupation</b> <span className="spaT" >{moccupation}</span></p>
-                <p> <b>Present address</b> <span className="spaT" >{presentaddress}</span></p>
-                <p> <b>Permanent address</b> <span className="spaT" >{permanentaddress}</span></p>
-                <p> <b>City</b> <span className="spaT" >{city}</span></p>
-                <p> <b>Religion</b> <span className="spaT" >{religion}</span></p>
+
+                  <p> First name :     <span>{firstname}</span>   </p>
+                  <p> Last name :  <span>{lastname}</span>   </p>
+                  <p> Dob :   <span>{dob}</span>   </p>
+                  <p> Age :     <span>{age}</span>    </p>
+                  <p> Gender :  <span>{gender}</span>    </p>
+                  <p> Sibling :    <span>{sibling}</span>   </p>
+                  <p> Category :    <span>{category}</span>     </p>
+                  <p> Father name :     <span>{father}</span>   </p>
+                  <p> Mother name :       <span>{mother}</span>   </p>
+                  <p> Father's Occupation :  <span>{foccupation}</span>   </p>
+                  <p> Mother's Occupation :   <span>{moccupation}</span> </p>
+
+
+
+                </div>
+              </Col><br /><br />
+
+
+              <Col sm={4}>
+                <div className="modal-stu">
+                  <h5> <VscStarFull /> Professional Details</h5>
+                  <hr />
+
+                  <p> Sr.no :   <span>{sr}</span>  </p>
+                  <p> Date of admission : <span>{doa}</span>   </p>
+                  <p> Board :      <span>{board}</span>   </p>
+                  <p> Class :    <span>{cla}</span>    </p>
+                  <p> Present address :  <span>{presentaddress}</span>  </p>
+                  <p> Permanent address :   <span>{permanentaddress}</span> </p>
+                  <p> Aadhar no :   <span>{aadhar}</span>    </p>
+                  <p> Contact no :   <span>{contact}</span>   </p>
+                  <p> City :         <span>{city}</span> </p>
+                  <p> Religion :    <span>{religion}</span> </p>
+
+                </div>
               </Col>
 
 
@@ -86,18 +104,10 @@ const ModalCamp = ({
                 <div className="mod-img" > </div>
                 <p className="img-text"> Image of student</p>
 
-                <div style={{ marginLeft: "60px", marginTop: "40%" }}>
-                  <Button variant="secondary"
-                    style={{ width: "100px", height: "50px" }}
-                    onClick={() => setOpen(false)}>
-                    Cancel
-                  </Button>
+                <div >
+                 
 
-                  <Button variant="danger"
-                    style={{ width: "100px", height: "50px", marginLeft: "20px" }}
-                  >
-                    Edit
-                  </Button>
+                  <Button variant="danger" className="edit-btn"> Edit</Button>
 
 
                 </div>

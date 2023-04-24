@@ -1,0 +1,87 @@
+{
+  "details": [
+    {
+      "firstname1": "Pooja",
+      "lastname1": "Mishra",
+      "join": "2023-04-14",
+      "email": "pooja@gamil.com",
+      "qufication": "B.ad",
+      "experience": "4 Year",
+      "special": "English",
+      "lastquali": "B.ad",
+      "marriage": "No",
+      "dob1": "10-03-1998",
+      "gender1": "Female",
+      "board1": "UP",
+      "aadhar1": "09876543212",
+      "contact1": "12345678910",
+      "category1": "Gernal",
+      "father1": "JP Mishra",
+      "mother1": "Geeta Mishra",
+      "foccupation1": "Private Job",
+      "moccupation1": "House Wife",
+      "address1": "Linepar",
+      "religion1": "Hindu",
+      "id": 1
+    },
+    {
+      "firstname1": "Dimpal",
+      "lastname1": "Tiwari",
+      "join": "2022-01-10",
+      "email": "dimpal@gamil.com",
+      "qufication": "MCA",
+      "experience": "3Year",
+      "special": "Math",
+      "lastquali": "MCA",
+      "marriage": "No",
+      "dob1": "1980-10-4",
+      "gender1": "male",
+      "board1": "UP",
+      "aadhar1": "09876543212",
+      "contact1": "12345678910",
+      "category1": "Gernal",
+      "father1": "JS Tiwari",
+      "mother1": "Sweta tiwari",
+      "foccupation1": "Bank",
+      "moccupation1": "House Wife",
+      "address1": "Thakurdwara",
+      "religion1": "Hindu",
+      "id": 2
+    },
+    {
+      "firstname1": "Mamta ",
+      "lastname1": "Thakur",
+      "join": "2022-01-10",
+      "email": "dimpal@gamil.com",
+      "qufication": "MCA",
+      "experience": "2 Year",
+      "special": "Hindi",
+      "lastquali": "BCA",
+      "marriage": "No",
+      "dob1": "1980-10-4",
+      "gender1": "Female",
+      "board1": "UP",
+      "aadhar1": "09876543212",
+      "contact1": "12345678910",
+      "category1": "Gernal",
+      "father1": "JS Tiwari",
+      "mother1": "Sweta tiwari",
+      "foccupation1": "Bank",
+      "moccupation1": "House Wife",
+      "address1": "Thakurdwara",
+      "religion1": "Hindu",
+      "id": 3
+    }
+
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

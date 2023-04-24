@@ -1,0 +1,60 @@
+{
+  "times": [
+    {
+      "period": "English",
+      "period1": "Hindi",
+      "period2": "Maths",
+      "period3": "Social Study",
+      "period4": "GK",
+      "period5": "Coversation",
+      "period6": "English",
+      "period7": "Hindi",
+      "period8": "Maths",
+      "period9": "Social Study",
+      "period10": "GK",
+      "period11": "Coversation",
+      "period12": "English",
+      "period13": "Hindi",
+      "period14": "Maths",
+      "period15": "Social Study",
+      "period16": "GK",
+      "period17": "Coversation",
+      "period18": "History",
+      "period19": "Rhyms",
+      "period20": "Drawing",
+      "period21": "Oral",
+      "period22": "Activity",
+      "period23": "Games",
+      "period24": "History",
+      "period25": "Rhyms",
+      "period26": "Drawing",
+      "period27": "Oral",
+      "period28": "Activity",
+      "period29": "Games",
+      "period30": "History",
+      "period31": "Rhyms",
+      "period32": "Drawing",
+      "period33": "Oral",
+      "period34": "Activity",
+      "period35": "Games",
+      "mon": "Mon",
+      "tues": "Tue",
+      "wed": "Wed",
+      "thur": "Thus",
+      "fri": "Fri",
+      "sat": "Sat",
+      "classname1": "Class 1",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

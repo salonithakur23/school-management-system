@@ -166,6 +166,11 @@
   margin: auto !important;
   margin-top: 50px !important;
 }
+.edit-btn{
+/* margin: auto !important; */
+width: 150px;
+margin-left: 120px !important;
+}
 
 
 

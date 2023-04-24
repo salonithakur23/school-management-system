@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Modal, Button, Container, Row, Col } from "react-bootstrap";
-import { updateFees } from "../Redux/Slice/action";
 import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from "react-router-dom";
+
+import { VscStarFull } from "react-icons/vsc";
 import './trans.css'
 
 const ModalComp = ({
@@ -55,7 +56,11 @@ const ModalComp = ({
         <Container>
           <Row>
             <Col sm={4}  >
-          <div>
+
+
+              <div className="modal-stu">
+                <h5> <VscStarFull /> Personal Details</h5>
+                <hr />
                 <p><b>Student Name:</b> <span className="spaT" >{stuname}</span></p>
                 <p><b>Fater Name:</b> <span className="spaT" >{fname}</span></p>
                 <p><b>Pic Point:</b> <span className="spaT" >{picpoint}</span></p>
@@ -63,9 +68,14 @@ const ModalComp = ({
                 <p><b>Distance:</b> <span className="spaT" >{distance}</span></p>
                 <p><b>Charge:</b> <span className="spaT" >{charge}</span></p>
                 <p><b>Address:</b> <span className="spaT" >{stuaddress}</span></p>
-                </div>
+              </div>
             </Col>
             <Col sm={4}>
+
+              <div className="modal-stu">
+                <h5> <VscStarFull /> Vehicle Details</h5>
+                <hr />
+             
               <p><b>Bus No:</b> <span className="spaT" >{busname}</span></p>
               <p><b>Driver Name:</b><span className="spaT">{drivername}</span></p>
               <p><b>Conductor Name:</b><span className="spaT">{conductorname}</span></p>
@@ -73,36 +83,28 @@ const ModalComp = ({
               <p><b>Conductor Nob:</b><span className="spaT" >{conductornob}</span></p>
               <p><b>Total:</b><span className="spaT" >{totalstdnt}</span></p>
               <p><b>Bus Route:</b><span className="spaT" >{busroute}</span></p>
-
-           
-
-          </Col>
-
-          <Col sm={4}>
-            <div className="mod-img" > </div>
-            <p className="img-text"> Image of student</p>
-
-            <div style={{ marginLeft: "60px", marginTop: "40%" }}>
-              <Button variant="secondary"
-                style={{ width: "100px", height: "50px" }}
-                onClick={() => setOpen(false)}>
-                Cancel
-              </Button>
-
-              <Button variant="danger"
-                style={{ width: "100px", height: "50px", marginLeft: "20px" }}
-              >
-                Edit
-              </Button>
+              </div>
 
 
-            </div>
-          </Col>
+            </Col>
 
-        </Row>
-      </Container>
+            <Col sm={4}>
+              <div className="mod-img" > </div>
+              <p className="img-text"> Image of student</p>
 
-    </Modal.Body>
+          
+               
+
+                <Button variant="danger" className="edit-btn"> Edit</Button>
+
+
+            
+            </Col>
+
+          </Row>
+        </Container>
+
+      </Modal.Body>
 
     </Modal >
   );

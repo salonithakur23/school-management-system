@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import React,{useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import ShowList from "./ShowList";
 import { useNavigate } from "react-router-dom";
+import ModalComp from './ModalCamp ';
+
 
 
 
@@ -12,39 +14,53 @@ import { useNavigate } from "react-router-dom";
 
 const Detail = ({ detail }) => {
 
-  const [open1, setOpen1] = useState(false);
-  const [user1, setUser1] = useState({});
-  const navigate  = useNavigate("");
+  const [open, setOpen] = useState(false);
+  const [user, setUser] = useState({});
+  const navigate = useNavigate("");
 
-  const handleModel1 = () => {
-    setOpen1(true);
-    setUser1(detail);
+  
+
+
+  const handleModel = () => {
+    setOpen(true);
+    setUser(detail);
 
   }
-  
-  
-   
-    return (
-      <>
+  const handleDelete = async (id) => {
+    if (window.confirm("Are you sure to delete that user ?")) {
+      try {
+        setOpen(false);
+
+      } catch (err) {
+        console.log(err)
+      }
+    }
+
+  }
 
 
-    <tbody>
-          <tr>
+
+  return (
+    <>
+
+
+      <tbody>
+        <tr>
 
           {/* <div>
             <img width={"50%"} src={detail.image} />
           </div> */}
-           
-            <td>{detail.firstname1}</td>
-            <td>{detail.lastname1}</td>
-            <td>{detail.join}</td>
-            <td>{detail.email}</td>
-            <td>{detail.qufication}</td>
-            <td>{detail.experience}</td>
-            <td>{detail.special}</td>
-            <td>{detail.lastquali}</td>
-           <td>{detail.marriage}</td>
-            {/* <td>{detail.dob1}</td>
+
+          <td>{detail.firstname1}</td>
+          <td>{detail.lastname1}</td>
+          <td>{detail.join}</td>
+          <td>{detail.email}</td>
+          <td>{detail.qufication}</td>
+          <td>{detail.experience}</td>
+          {/* <td>{detail.special}</td>
+          <td>{detail.lastquali}</td> */}
+          <td>{detail.marriage}</td>
+          {/* <td>{detail.dob1}</td>
             <td>{detail.gender1}</td>
             <td>{detail.board1}</td> 
             <td>{detail.aadhar1}</td>
@@ -56,41 +72,45 @@ const Detail = ({ detail }) => {
             <td>{detail.moccupation1}</td>
             <td>{detail.address1}</td>
             <td>{detail.religion1}</td>
-            <td>{detail.city1}</td> */} 
-
-            {/* <Link className="view-link" >View</Link> */}
-          
-
- {/* <Link to="/showlist" onClick={()=> handleModel1()}> View */}
-  <button className="view-btn" 
-  //  onClick={()=> handleModel1()}
-  >View </button>
-  {/* </Link> */}
-    
-            {/* <button className="view-btn" onClick={() => updatePost(post)}>edit </button> */}
+            <td>{detail.city1}</td> */}
 
 
-            {open1 && (
-            <ShowList
-            
-              open={open1}
-              setOpen={setOpen1}
-              // updatePost={updatePost}
-              {...user1}
+
+          <td>
+
+            <button style={{
+              backgroundColor: "gray",
+              width: "100px",
+              height: "30px",
+
+            }}
+              onClick={() => handleModel(detail)}
+            >
+              View
+            </button>
+
+          </td>
+          {open && (
+            <ModalComp
+              open={open}
+              setOpen={setOpen}
+              // handleDelete={handleDelete}
+              {...user}
             />
           )}
 
-            
-          </tr>
-          </tbody>
-          </>
-
-          
-      
 
 
-  
-    );
-  };
+        </tr>
+      </tbody>
+    </>
 
-  export default Detail;
+
+
+
+
+
+  );
+};
+
+export default Detail;

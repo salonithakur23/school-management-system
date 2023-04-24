@@ -41,7 +41,7 @@ const ResultList = () => {
       <p className='dasfee'>Dasboard /View Student Result Page</p>
       <div className='M-div'>
         <div className='dfelx'>
-          <Link to="/student ">
+          <Link to="/resultform ">
             <button className='btns'>+ Create</button>
           </Link>
           <button className='next-btn'>
