@@ -40,14 +40,7 @@ const Fees = ({ fees }) => {
 
       <tbody>
 
-        {isActive ?
-          <div style={{ width: "100%" }}>
-            <center>
-              <p>This student is not available at the moment:</p>
-            </center>
-          </div>
-
-          :
+    
           <tr>
 
             {/* <td>{fees.id}</td> */}
@@ -83,22 +76,14 @@ const Fees = ({ fees }) => {
               <ModalComp
                 open={open}
                 setOpen={setOpen}
-                // handleDelete={handleDelete}
                 {...user}
               />
             )}
 
-            {/* <td>
-            <Link to={`/update/${fees.id}`}>
-            <button >Update</button>
-            </Link>
-            
-            </td> */}
-            <td>
-              <button onClick={handleClick} >Active</button>
-            </td>
+         
+           
           </tr>
-        }
+   
 
       </tbody>
 
@@ -109,4 +94,3 @@ const Fees = ({ fees }) => {
 }
 
 export default Fees
-// . handleUpdateClick(fees.id, updateFees)

@@ -2,11 +2,13 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchPosts } from '../Redux/PostsSlice/action';
 import { Link } from 'react-router-dom';
-import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
+import { AiFillDashboard, AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
 import Table from 'react-bootstrap/Table';
 import Student from './Student';
 import MainLayout from '../Layouts/MainLayout';
 import './allstudent.css'
+import { Button, Container, Row } from 'react-bootstrap';
+import { IoIosCreate } from 'react-icons/io';
 
 const StudentList = () => {
   const dispatch = useDispatch()
@@ -33,30 +35,42 @@ const StudentList = () => {
   return (
     <>
       <MainLayout />
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard / View student List </h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div' >
 
-      <p className='dasfee'>Dasboard / View student List </p>
-      <div className='M-div'>
-        <div className='dfelx'>
-          <Link to="/student ">
-            <button className='btns'> + Create</button>
-          </Link>
-          <button className='next-btn'>
-          <span className='spantext'><AiFillSetting /></span>
-          
-            Setting
-          </button>
-          <button className='next-btn'>
-           <span className='spantext'>   <AiFillEdit /></span>
-         
-            Edit
-          </button>
-          <button className='next-btn'>
-           <span className='spantext'><AiFillDelete /></span>
-            Delete
-          </button>
-        </div>
-      </div>
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/student">Go back</Link>
+                    </Button>
 
+                    <Button className='table-btn' variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
+
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
+   
 
 
       <div className='post-table'>

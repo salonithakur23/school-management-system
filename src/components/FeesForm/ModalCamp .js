@@ -94,21 +94,7 @@ const ModalComp = ({
               <div className="mod-img" > </div>
               <p className="img-text"> Image of student</p>
 
-              <div style={{ marginLeft: "60px", marginTop: "40%" }}>
-                <Button variant="secondary"
-                  style={{ width: "100px", height: "50px" }}
-                  onClick={() => setOpen(false)}>
-                  Cancel
-                </Button>
-
-                <Button variant="danger"
-                  style={{ width: "100px", height: "50px", marginLeft: "20px" }}
-                >
-                  Edit
-                </Button>
-
-
-              </div>
+              <Button className="edit-btn">Edit</Button>
             </Col>
 
           </Row>

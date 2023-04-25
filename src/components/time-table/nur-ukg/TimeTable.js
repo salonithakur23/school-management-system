@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MainLayout from '../../Layouts/MainLayout';
-import { Button, Form, Table } from 'react-bootstrap';
+import { Button, Container, Form, Row, Table } from 'react-bootstrap';
 import { AiFillDashboard,AiFillEdit ,AiFillDelete} from "react-icons/ai";
 // import { addtime } from '../../../reducer/action/TimeTableAction';
 import { addtime } from '../../Redux/Timetable/action';
@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import '../../../App.css'
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
+import { IoIosCreate } from 'react-icons/io';
 
 
 
@@ -134,39 +135,43 @@ const TimeTable = () => {
   return (
     <>
       <MainLayout />
-
-      <Table striped bordered hover style={{ textAlign: "left" }}>
-        <thead>
-          <tr>
-            <th><h5><AiFillDashboard /> &nbsp; Dashboard / Time-Table</h5></th>
-          </tr>
-        </thead>
-      </Table>
-
-      <Table striped bordered hover>
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dashboard / Time-Table</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
             <thead>
               <tr>
                 <th>
-                  <div className='table-div'>
-                   
+                  <div className='table-div' >
+                 
                     <Button className='table-btn' variant="light" >
-                      <RiArrowGoBackFill />&nbsp;<Link to="/tablelist">Go Back</Link>
+                      <IoIosCreate />&nbsp;<Link to="/tablelist">Create</Link>
                     </Button>
 
                     <Button className='table-btn' variant="light" >
-                   <AiFillEdit />&nbsp;Bulk Edit
+                      <AiFillEdit />&nbsp;Bulk Edit
                     </Button>
-
 
                     <Button className='table-btn' variant="light" >
-                     <AiFillDelete />&nbsp;Bulk Delete
+                      <AiFillDelete />&nbsp;Bulk Delete
                     </Button>
+                    
                   </div>
                 </th>
               </tr>
             </thead>
           </Table>
+          <hr />
+        </Row>
+      </Container>
 
+     
       <div className='form-div'>
 
         <form onSubmit={handleSubmit}>

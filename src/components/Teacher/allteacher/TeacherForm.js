@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { Button, Container, Table } from 'react-bootstrap';
+import { Button, Container, Row, Table } from 'react-bootstrap';
 import { AiFillDashboard  ,AiFillEdit ,AiFillDelete} from "react-icons/ai";
 // import '../../../style/main.css'
 import '../../../App.css'
@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { adddetail } from '../../Redux/TeacherSlice/action';
 import MainLayout from '../../Layouts/MainLayout';
+import { IoIosCreate } from 'react-icons/io';
 
 
 
@@ -89,28 +90,28 @@ const TeacherForm = () => {
 
       <MainLayout />
 
-      <Table striped bordered hover style={{ textAlign: "left" }}>
-        <thead>
-          <tr>
-            <th><h5><AiFillDashboard /> &nbsp; Dashboard / Teacher-form</h5></th>
-          </tr>
-        </thead>
-      </Table>
-      <Table striped bordered hover>
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dashboard / Teacher-form</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
             <thead>
               <tr>
                 <th>
-                  <div className='table-div'>
-          
-            
+                  <div className='table-div' >
+                 
                     <Button className='table-btn' variant="light" >
-                      <RiArrowGoBackFill />&nbsp;<Link to="/detaillist">Go Back</Link>
+                      <IoIosCreate />&nbsp;<Link to="/detaillist">Create</Link>
                     </Button>
-
 
                     <Button className='table-btn' variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
-                    </Button >
+                    </Button>
 
                     <Button className='table-btn' variant="light" >
                       <AiFillDelete />&nbsp;Bulk Delete
@@ -121,6 +122,12 @@ const TeacherForm = () => {
               </tr>
             </thead>
           </Table>
+          <hr />
+        </Row>
+      </Container>
+
+      
+     
 
       <div className='form-div'  >
 
@@ -132,10 +139,7 @@ const TeacherForm = () => {
 
 
 
-            {/* <div class="col-sm-4 position-relative">
-    <label class="form-label">Image</label>
-    <input type="url" class="form-control" value={image1} onChange={(event) => setImage1(event.target.value)} />
-  </div> */}
+      
 
 
             <div class="col-md-4 position-relative">

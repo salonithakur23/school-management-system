@@ -8,6 +8,7 @@ import MainLayout from '../Layouts/MainLayout';
 import { Link } from 'react-router-dom';
 import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
 import { RiArrowGoBackLine } from 'react-icons/ri';
+import { IoIosCreate } from 'react-icons/io';
 
 
 
@@ -88,34 +89,43 @@ const StudentForm = () => {
     <>
 
       <MainLayout />
-      <p className='dasfee'>Dasboard / Add Student Form </p>
-      <div className='M-div'>
-        <div className='dfelx'>
-          <Link to="/studentlist ">
-            <button className='btns'>
-            <span className='spantext'><RiArrowGoBackLine/></span>
-              Go Back</button>
-          </Link>
-          <button className='next-btn'>
-         
-            <span className='spantext'>   <AiFillSetting /></span>
 
-            Setting
-          </button>
-          <button className='next-btn'>
-          <span className='spantext'><AiFillEdit /></span>
+      <Container style={{ width: "90%" }} >
+                <Table striped bordered hover className='main-table'>
+                    <thead>
+                        <tr>
+                            <th><h5><AiFillDashboard /> &nbsp;Dasboard / Add Student Form </h5></th>
+                        </tr>
+                    </thead>
+                </Table>
+                <Row>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div className='table-div' >
 
-           
-            Edit
-          </button>
-          <button className='next-btn'>
-          <span className='spantext'> <AiFillDelete /></span>
+                                        <Button className='table-btn' variant="light" >
+                                            <IoIosCreate />&nbsp;<Link to="/studentlist">Go back</Link>
+                                        </Button>
 
-           
-            Delete
-          </button>
-        </div>
-      </div>
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillEdit />&nbsp;Bulk Edit
+                                        </Button>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillDelete />&nbsp;Bulk Delete
+                                        </Button>
+
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </Table>
+                    <hr />
+                </Row>
+            </Container>
+     
    
       <div style={{ padding: "20px", border: "1px solid", margin: "10px",marginTop:"50px" }}>
 

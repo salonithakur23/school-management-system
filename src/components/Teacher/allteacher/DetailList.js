@@ -99,9 +99,10 @@ const DetailList = () => {
           <th>Email</th>
           <th>Qualification</th>
           <th>Experience</th>
-          <th>Specialisation in sbj</th>
-          <th>Last qualification</th>
+          {/* <th>Specialisation in sbj</th>
+          <th>Last qualification</th> */}
         <th>Marriage state</th> 
+        <th>View</th> 
            {/* <th>DOB</th>
           <th>Gender</th>
           <th>Board</th>
