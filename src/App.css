@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -38,13 +38,13 @@
   }
 }
 
-.label {
+/* .label {
   margin-left: -65%;
 }
 
 .label2 {
   margin-left: -48%;
-}
+} */
 
 .remark {
   margin-left: -90%;
@@ -488,22 +488,24 @@ table {
     width: 90%;
     height: 10% !important;
     border: solid 1px gray;
+    
   }
   .btns {
     width: 100px;
     border-radius: 4px;
     background-color: white;
-    border: 2px solid gray;
-    margin-top: -1px;
-    margin-left: -5px;
+    /* border: 2px solid gray; */
+    /* margin-top: -1px; */
+    margin-left: -5px !important;
+    margin-top: 9px !important;
   }
   .next-btn {
     width: 100px;
     border-radius: 4px;
     background-color: white;
     border: 2px solid gray;
-    margin-top: -1px;
-    margin-left: -10px;
+    margin-top: 9px !important;
+    /* margin-left: -10px; */
 
 
   
@@ -562,9 +564,9 @@ table {
   background-color: #000000;
 }
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -764,8 +766,9 @@ margin-top: 15px;
 
 .form-div{
   padding: 20px;
-  border: 1px solid;
-  margin: 10px;
+  border: 1px solid rgb(179, 178, 178);
+  margin: 50px;
+
 
 }
 .table-div{

@@ -101,7 +101,7 @@ const FeesForm = () => {
                         <Row>
 
                             <div className="col-sm-4 mt-3 position-relative">
-                                <label className="label">Student Name</label>
+                                <label className="form-label">Student Name</label>
                                 <input type="text" className="form-control"
                                     value={sname}
                                     onChange={(event) => setSname(event.target.value)} 
@@ -110,7 +110,7 @@ const FeesForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Class Name</label>
+                                <label className="form-label">Class Name</label>
                                 <input type="text" className="form-control"
                                     value={cname}
                                     onChange={(event) => setCname(event.target.value)} 
@@ -119,7 +119,7 @@ const FeesForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Roll No</label>
+                                <label className="form-label">Roll No</label>
                                 <input type="text" className="form-control"
                                     value={rollno}
                                     onChange={(event) => setRollno(event.target.value)}
@@ -129,7 +129,7 @@ const FeesForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Registration Fees</label>
+                                <label className="form-label">Registration Fees</label>
                                 <input type="text" className="form-control"
                                     value={regfee}
                                     onChange={(event) => setRegfee(event.target.value)} 
@@ -139,7 +139,7 @@ const FeesForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Monthly Fees</label>
+                                <label className="form-label">Monthly Fees</label>
                                 <input type="number" className="form-control"
                                     value={monfee}
                                     onChange={(event) => setMonfee(event.target.value)} 
@@ -149,7 +149,7 @@ const FeesForm = () => {
 
 
                             <div className="col-md-4  mt-3  position-relative">
-                                <label className="label">Examination Fees</label>
+                                <label className="form-label">Examination Fees</label>
                                 <input type="text" className="form-control"
                                     value={examfee}
                                     onChange={(event) => setExamfee(event.target.value)} 
@@ -158,7 +158,7 @@ const FeesForm = () => {
                             </div>
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Bus Fees</label>
+                                <label className="form-label">Bus Fees</label>
                                 <input type="number" className="form-control"
                                     value={busfee}
                                     onChange={(event) => setBusfee(event.target.value)} 
@@ -170,7 +170,7 @@ const FeesForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Computer Fees</label>
+                                <label className="form-label">Computer Fees</label>
                                 <input type="text" className="form-control"
                                     value={compufee}
                                     onChange={(event) => setCompufee(event.target.value)} 
@@ -179,7 +179,7 @@ const FeesForm = () => {
                             </div>
 
                             <div className="col-md-4 mt-3 position-relative">
-                                <label className="label">Payment Method</label>
+                                <label className="form-label">Payment Method</label>
                                 <select className="form-select"
                                     value={paymethod}
                                     onChange={(event) => setPaymethod(event.target.value)} 
@@ -199,7 +199,7 @@ const FeesForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Address</label>
+                                <label className="form-label">Address</label>
                                 <input type="text" className="form-control"
                                     value={address}
                                     onChange={(event) => setAddress(event.target.value)} 
@@ -208,7 +208,7 @@ const FeesForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Father NAme</label>
+                                <label className="form-label">Father NAme</label>
                                 <input type="text" className="form-control"
 
                                     value={fname}
@@ -217,7 +217,7 @@ const FeesForm = () => {
                             </div>
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Mother name</label>
+                                <label className="form-label">Mother name</label>
                                 <input type="text" className="form-control"
                                     value={mname}
                                     onChange={(event) => setMname(event.target.value)} 
@@ -227,7 +227,7 @@ const FeesForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Remarks </label>
+                                <label className="form-label">Remarks </label>
                                 <input type="text" className="form-control"
                                     value={remark}
                                     onChange={(event) => setRemark(event.target.value)}
@@ -240,7 +240,7 @@ const FeesForm = () => {
 
                             {/* 
                         <div className="col-md-4 mt-3  position-relative">
-                            <label className="label">Mother's Occupation</label>
+                            <label className="form-label">Mother's Occupation</label>
                             <input type="text" className="form-control"
                                 value={moccupation} onChange={(event) => setMoccupation(event.target.value)}
                             />
@@ -248,7 +248,7 @@ const FeesForm = () => {
 
 
                         <div className="col-md-4  mt-3 position-relative">
-                            <label className="label">Present address</label>
+                            <label className="form-label">Present address</label>
                             <input type="text" className="form-control"
                                 value={presentaddress} onChange={(event) => setPresentaddress(event.target.value)}
                             />
@@ -256,7 +256,7 @@ const FeesForm = () => {
 
 
                             {/* <div className="col-md-4 mt-3  position-relative">
-                <label className="label">Permanent address</label>
+                <label className="form-label">Permanent address</label>
                 <input type="text" className="form-control"
                   value={permanentaddress} onChange={(event) => setPermanentaddress(event.target.value)}
                 />
@@ -264,7 +264,7 @@ const FeesForm = () => {
 
 
                             {/* <div className="col-md-4 mt-3 position-relative">
-                <label className="label">City</label>
+                <label className="form-label">City</label>
                 <input type="text" className="form-control"
                   value={city} onChange={(event) => setCity(event.target.value)}
                 />
@@ -272,7 +272,7 @@ const FeesForm = () => {
 
 
                             {/* <div className="col-md-4  mt-3  position-relative">
-                <label className="label">Religion</label>
+                <label className="form-label">Religion</label>
                 <input type="text" className="form-control"
                   value={religion} onChange={(event) => setReligion(event.target.value)}
                 />

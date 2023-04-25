@@ -101,7 +101,9 @@ const ModalCamp = ({
 
 
               <Col sm={4}>
-                <div className="mod-img" > </div>
+                <div  className="mod-img" >
+                  <img className="modal1"  src="img/ggg.jpg" />
+                   </div>
                 <p className="img-text"> Image of student</p>
 
                 <div >

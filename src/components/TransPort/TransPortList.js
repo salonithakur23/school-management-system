@@ -61,8 +61,8 @@ const TransPortList = () => {
     
 
 
-      <p className='add'
-      > View Student Fees Details</p>
+      {/* <p className='add'
+      > View Student Fees Details</p> */}
       <br />
 
       <div className='post-table'>

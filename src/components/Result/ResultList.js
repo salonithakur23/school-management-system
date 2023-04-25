@@ -73,7 +73,7 @@ const ResultList = () => {
         <h1></h1>
         <Table responsive striped bordered hover>
 
-        <Table responsive striped bordered hover >
+        {/* <Table responsive striped bordered hover >
         <table class="table table-bordered border-secondary">
             <thead>
                 <tr>
@@ -98,7 +98,7 @@ const ResultList = () => {
             
             </thead>
             </table>
-          </Table>
+          </Table> */}
           <table class="table table-bordered border-secondary">
             <thead>
             <tr>

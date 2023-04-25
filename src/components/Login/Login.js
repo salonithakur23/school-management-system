@@ -7,6 +7,7 @@ import { auth } from '../firebase'
 import Button from 'react-bootstrap/Button';
 // import { useAuthValue } from '../../AuthContext'
 import { useAuthValue } from '../AuthContext'
+import { Container,Row,Col } from 'react-bootstrap'
 
 function Login(){
   const [email, setEmail] = useState('')
@@ -35,9 +36,34 @@ function Login(){
 
   return(
     <>
-    <div className='center' style={{
+
+<div className='login-div'>
+<p className='scl-login'>School Management System</p>
+   </div>
+
+   <Container>
+  <Row>
+    <Col sm={6}>
+
+      <div className='back-img'>
+        
+         <img  className='back-img' src='img/sch2-removebg-preview.png' />
+
+      </div>
+
+      </Col> 
+
+
+      <Col sm={6}>
+      
+      <div className='center' >
+
+     
+
+
+    {/* <div className='center' style={{
       margin:"auto"
-    }}>
+    }}> */}
       <div className='auth'>
       <img width={"80px"} src="/img/travellogo.png" alt="" />
        <br />
@@ -67,7 +93,13 @@ function Login(){
           <Link to='/register'>Create one here</Link>
         </p>
       </div>
+
     </div>
+    </Col>
+
+    
+</Row>
+</Container>
     </>
   )
 }

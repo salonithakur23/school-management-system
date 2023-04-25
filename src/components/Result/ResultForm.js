@@ -95,7 +95,7 @@ const ResultForm = () => {
                         <Row>
 
                             <div className="col-sm-4 mt-3 position-relative">
-                                <label className="label">Subject Name</label>
+                                <label className="form-label">Subject Name</label>
                                 <input type="text" className="form-control"
                                     value={subname}
                                     onChange={(event) => setSubname(event.target.value)} required
@@ -104,7 +104,7 @@ const ResultForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Summer Asgin.</label>
+                                <label className="form-label">Summer Asgin.</label>
                                 <input type="text" className="form-control"
                                     value={sumassgn}
                                     onChange={(event) => setSumassgn(event.target.value)} required
@@ -113,7 +113,7 @@ const ResultForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Unit Ist </label>
+                                <label className="form-label">Unit Ist </label>
                                 <input type="text" className="form-control"
                                     value={pd1}
                                     onChange={(event) => setPd1(event.target.value)} required
@@ -123,7 +123,7 @@ const ResultForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Unit IInd</label>
+                                <label className="form-label">Unit IInd</label>
                                 <input type="text" className="form-control"
                                     value={pd2}
                                     onChange={(event) => setPd2(event.target.value)} required
@@ -133,7 +133,7 @@ const ResultForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Half Yearly.</label>
+                                <label className="form-label">Half Yearly.</label>
                                 <input type="text" className="form-control"
                                     value={half}
                                     onChange={(event) => setHalf(event.target.value)} required
@@ -143,7 +143,7 @@ const ResultForm = () => {
 
 
                             <div className="col-md-4  mt-3  position-relative">
-                                <label className="label">Total </label>
+                                <label className="form-label">Total </label>
                                 <input type="text" className="form-control"
                                     value={halftotal}
                                     onChange={(event) => setHalftotal(event.target.value)} required
@@ -152,7 +152,7 @@ const ResultForm = () => {
                             </div>
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Winter Assign.</label>
+                                <label className="form-label">Winter Assign.</label>
                                 <input type="text" className="form-control"
                                     value={wintassgn}
                                     onChange={(event) => setWintassgn(event.target.value)} required
@@ -164,7 +164,7 @@ const ResultForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Unit IIIrd</label>
+                                <label className="form-label">Unit IIIrd</label>
                                 <input type="text" className="form-control"
                                     value={pd3}
                                     onChange={(event) => setPd3(event.target.value)} required
@@ -174,7 +174,7 @@ const ResultForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Unit-IVth</label>
+                                <label className="form-label">Unit-IVth</label>
                                 <input type="text" className="form-control"
                                     value={pd4}
                                     onChange={(event) => setPd4(event.target.value)} required
@@ -187,7 +187,7 @@ const ResultForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Annual Exam</label>
+                                <label className="form-label">Annual Exam</label>
                                 <input type="text" className="form-control"
                                     value={annuexam}
                                     onChange={(event) => setAnnuexam(event.target.value)} required
@@ -195,7 +195,7 @@ const ResultForm = () => {
 
                             </div>
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Total</label>
+                                <label className="form-label">Total</label>
                                 <input type="text" className="form-control"
                                     value={total}
                                     onChange={(event) => setTotal(event.target.value)} required
@@ -203,7 +203,7 @@ const ResultForm = () => {
 
                             </div>
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Grand Total</label>
+                                <label className="form-label">Grand Total</label>
                                 <input type="text" className="form-control"
                                     value={grntotal}
                                     onChange={(event) => setGrntotal(event.target.value)} required
@@ -211,7 +211,7 @@ const ResultForm = () => {
 
                             </div>
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Grade</label>
+                                <label className="form-label">Grade</label>
                                 <input type="text" className="form-control"
                                     value={grade}
                                     onChange={(event) => setGrade(event.target.value)} required

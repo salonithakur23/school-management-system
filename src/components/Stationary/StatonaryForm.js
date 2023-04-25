@@ -81,7 +81,7 @@ const StationaryForm = () => {
                         <Row>
 
                             <div className="col-sm-4 mt-3 position-relative">
-                                <label className="label">Item Name</label>
+                                <label className="form-label">Item Name</label>
                                 <input type="text" className="form-control"
                                     value={iname}
                                     onChange={(event) => setIname(event.target.value)} required
@@ -90,7 +90,7 @@ const StationaryForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Item Category</label>
+                                <label className="form-label">Item Category</label>
                                 <input type="number" className="form-control"
                                     value={icate}
                                     onChange={(event) => setIcate(event.target.value)} required
@@ -99,7 +99,7 @@ const StationaryForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Company Name</label>
+                                <label className="form-label">Company Name</label>
                                 <input type="text" className="form-control"
                                     value={company}
                                     onChange={(event) => setCompany(event.target.value)} required
@@ -109,7 +109,7 @@ const StationaryForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Board Name</label>
+                                <label className="form-label">Board Name</label>
                                 <input type="text" className="form-control"
                                     value={board}
                                     onChange={(event) => setBoard(event.target.value)} required
@@ -119,7 +119,7 @@ const StationaryForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Rate</label>
+                                <label className="form-label">Rate</label>
                                 <input type="number" className="form-control"
                                     value={rate}
                                     onChange={(event) => setRate(event.target.value)} required
@@ -129,7 +129,7 @@ const StationaryForm = () => {
 
 
                             <div className="col-md-4  mt-3  position-relative">
-                                <label className="label">stock</label>
+                                <label className="form-label">stock</label>
                                 <input type="number" className="form-control"
                                     value={stock}
                                     onChange={(event) => setStock(event.target.value)} required
@@ -139,7 +139,7 @@ const StationaryForm = () => {
 
                           
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Item Received Date</label>
+                                <label className="form-label">Item Received Date</label>
                                 <input type="date" className="form-control"
                                     value={date}
                                     onChange={(event) => setDate(event.target.value)} required

@@ -98,7 +98,7 @@ const TransPortForm = () => {
                         <Row>
 
                             <div className="col-sm-4 mt-3 position-relative">
-                                <label className="label">Bus Number</label>
+                                <label className="form-label">Bus Number</label>
                                 <input type="number" className="form-control"
                                     value={busname}
                                     onChange={(event) => setBusname(event.target.value)} required
@@ -107,7 +107,7 @@ const TransPortForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Driver Name</label>
+                                <label className="form-label">Driver Name</label>
                                 <input type="text" className="form-control"
                                     value={drivername}
                                     onChange={(event) => setDrivername(event.target.value)} required
@@ -116,7 +116,7 @@ const TransPortForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Conductor Name</label>
+                                <label className="form-label">Conductor Name</label>
                                 <input type="text" className="form-control"
                                     value={conductorname}
                                     onChange={(event) => setConductorname(event.target.value)} required
@@ -126,7 +126,7 @@ const TransPortForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Conductor contact No.</label>
+                                <label className="form-label">Conductor contact No.</label>
                                 <input type="text" className="form-control"
                                     value={conductornob}
                                     onChange={(event) => setConductornob(event.target.value)} required
@@ -136,7 +136,7 @@ const TransPortForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Driver Contact No.</label>
+                                <label className="form-label">Driver Contact No.</label>
                                 <input type="number" className="form-control"
                                     value={dvrivernob}
                                     onChange={(event) => setDvrivernob(event.target.value)} required
@@ -146,7 +146,7 @@ const TransPortForm = () => {
 
 
                             <div className="col-md-4  mt-3  position-relative">
-                                <label className="label">Total Students</label>
+                                <label className="form-label">Total Students</label>
                                 <input type="text" className="form-control"
                                     value={totalstdnt}
                                     onChange={(event) => setTotalstdnt(event.target.value)} required
@@ -155,7 +155,7 @@ const TransPortForm = () => {
                             </div>
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Bus Route</label>
+                                <label className="form-label">Bus Route</label>
                                 <input type="number" className="form-control"
                                     value={busroute}
                                     onChange={(event) => setBusroute(event.target.value)} required
@@ -167,7 +167,7 @@ const TransPortForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Student Name</label>
+                                <label className="form-label">Student Name</label>
                                 <input type="text" className="form-control"
                                     value={stuname}
                                     onChange={(event) => setStuname(event.target.value)}
@@ -177,7 +177,7 @@ const TransPortForm = () => {
 
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Father Name</label>
+                                <label className="form-label">Father Name</label>
                                 <input type="text" className="form-control"
                                     value={fname}
                                     onChange={(event) => setFname(event.target.value)}
@@ -190,7 +190,7 @@ const TransPortForm = () => {
 
                             
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Pic Point </label>
+                                <label className="form-label">Pic Point </label>
                                 <input type="text" className="form-control"
                                     value={picpoint}
                                     onChange={(event) => setPicpoint(event.target.value)}
@@ -198,7 +198,7 @@ const TransPortForm = () => {
                             </div>
                             
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Pic Time </label>
+                                <label className="form-label">Pic Time </label>
                                 <input type="text" className="form-control"
                                     value={pictime}
                                     onChange={(event) => setPictime(event.target.value)}
@@ -206,7 +206,7 @@ const TransPortForm = () => {
                             </div>
                             
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label"> Distance</label>
+                                <label className="form-label"> Distance</label>
                                 <input type="text" className="form-control"
                                     value={distance}
                                     onChange={(event) => setDistance(event.target.value)}
@@ -214,7 +214,7 @@ const TransPortForm = () => {
                             </div>
                             
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Charges</label>
+                                <label className="form-label">Charges</label>
                                 <input type="text" className="form-control"
                                     value={charge}
                                     onChange={(event) => setCharge(event.target.value)}

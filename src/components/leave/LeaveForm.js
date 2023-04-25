@@ -92,7 +92,7 @@ const LeaveForm = () => {
                     <form className="row g-4 p-3 registration-form" onSubmit={handleSubmit}>
 
                         <div class="col-md-4 position-relative">
-                            <label className="label">Name</label>
+                            <label className="form-label">Name</label>
                             <input type="text" class="form-control"
                                    value={name1} onChange={(event) => setName1(event.target.value)}
                                  />
@@ -100,7 +100,7 @@ const LeaveForm = () => {
                         </div>
 
                         <div class="col-md-4 position-relative">
-                            <label className="label">Class</label>
+                            <label className="form-label">Class</label>
                             <input type="text" class="form-control"
                                    value={class1} onChange={(event) => setClass1(event.target.value)}
                                  />
@@ -109,7 +109,7 @@ const LeaveForm = () => {
 
 
                         <div class="col-md-4 position-relative">
-                            <label className="label">Father name</label>
+                            <label className="form-label">Father name</label>
                             <input type="text" class="form-control"
                                value={father} onChange={(event) => setFather(event.target.value)}
                             />
@@ -117,7 +117,7 @@ const LeaveForm = () => {
                         </div>
 
                         <div class="col-md-4 position-relative">
-                            <label className="label">Date </label>
+                            <label className="form-label">Date </label>
                             <input type="text" class="form-control"
                                value={date2} onChange={(event) => setDate2(event.target.value)}
                             />
@@ -125,7 +125,7 @@ const LeaveForm = () => {
                         </div>
 
                         <div class="col-md-4 position-relative">
-                            <label className="label">Check by</label>
+                            <label className="form-label">Check by</label>
                             <input type="text" class="form-control"
                                value={check} onChange={(event) => setCheck(event.target.value)}
                             />
