@@ -1,5 +1,17 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+.tea-img{
+  width: 100%;
+  height: 100%;
+}
+.posttable{
+  border: solid 2px  rgb(179, 178, 178);
+  width: 93%;
+  margin: auto;
+  margin-top: 50px !important;
+  padding: 15px !important;
 }
 
 .App-logo {
@@ -488,22 +500,24 @@ table {
     width: 90%;
     height: 10% !important;
     border: solid 1px gray;
+    
   }
   .btns {
     width: 100px;
     border-radius: 4px;
     background-color: white;
-    border: 2px solid gray;
-    margin-top: -1px;
-    margin-left: -5px;
+    /* border: 2px solid gray; */
+    /* margin-top: -1px; */
+    margin-left: -5px !important;
+    margin-top: 9px !important;
   }
   .next-btn {
     width: 100px;
     border-radius: 4px;
     background-color: white;
     border: 2px solid gray;
-    margin-top: -1px;
-    margin-left: -10px;
+    margin-top: 9px !important;
+    /* margin-left: -10px; */
 
 
   
@@ -764,8 +778,9 @@ margin-top: 15px;
 
 .form-div{
   padding: 20px;
-  border: 1px solid;
-  margin: 10px;
+  border: 1px solid rgb(179, 178, 178);
+  margin: 50px;
+
 
 }
 .table-div{

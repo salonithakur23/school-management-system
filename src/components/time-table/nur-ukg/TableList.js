@@ -85,13 +85,15 @@ const TableList = () => {
       </Container>
 
 
-      <div className="post-table">
+      <div className="posttable">
 
         <h5 className="w3-center w3-flat-midnight-blue w3-padding-48 w3-border-blue-grey w3-grey text text-center mb-5 mt-3">Time-table</h5>
 
         <Table striped bordered hover responsive>
           <thead>
             <tr>
+            {/* <th>Class </th>
+            <th>Teacher </th> */}
               <th>Days</th>
               <th>Ist Period</th>
               <th>IInd Period</th>
@@ -99,6 +101,7 @@ const TableList = () => {
               <th>IVth Period</th>
               <th>Vth Period</th>
               <th>VIth Period</th>
+             
 
             </tr>
           </thead>

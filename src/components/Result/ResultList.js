@@ -104,13 +104,13 @@ const ResultList = () => {
 
    
 
-      <div className='post-table'>
+      <div className='posttable'>
         <h2 className="w3-center w3-flat-midnight-blue w3-padding-48 w3-border-blue-grey w3-grey text text-center mb-5 mt-3">Student Result  Details</h2>
 
         <h1></h1>
         <Table responsive striped bordered hover>
 
-        <Table responsive striped bordered hover >
+        {/* <Table responsive striped bordered hover >
         <table class="table table-bordered border-secondary">
             <thead>
                 <tr>
@@ -135,7 +135,7 @@ const ResultList = () => {
             
             </thead>
             </table>
-          </Table>
+          </Table> */}
           <table class="table table-bordered border-secondary">
             <thead>
             <tr>

@@ -99,11 +99,11 @@ const TransPortList = () => {
     
 
 
-      <p className='add'
-      > View Student Fees Details</p>
+      {/* <p className='add'
+      > View Student Fees Details</p> */}
       <br />
 
-      <div className='post-table'>
+      <div className='posttable'>
         <h2 className="w3-center w3-flat-midnight-blue w3-padding-48 w3-border-blue-grey w3-grey text text-center mb-5 mt-3">Student Tranportation   Details</h2>
 
         <h1></h1>

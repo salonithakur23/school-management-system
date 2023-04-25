@@ -1,16 +1,28 @@
 {
   "sallerys": [
     {
-      "name2": "Pooja  Mishra",
-      "date2": "2023-04-15",
+      "name2": "Saloni",
+      "date2": "2-2-2023",
+      "bankname": "panjab",
+      "ifsc": "PNB5646JHU145",
+      "account": "98784654136457",
+      "holder": "saloni",
+      "sallery": "10000",
+      "leave": "5",
+      "tsallery": "8335",
+      "id": 2
+    },
+    {
+      "name2": "pooja",
+      "date2": "2-5-2023",
       "bankname": "SBI",
-      "ifsc": "sbi23446",
-      "account": "98765432132",
-      "holder": "JP Mishra",
-      "sallery": "11",
+      "ifsc": "SBI54654JU4564",
+      "account": "89765432132",
+      "holder": "pooja",
+      "sallery": "10000",
       "leave": "2",
-      "tsallery": "11",
-      "id": 1
+      "tsallery": "9334",
+      "id": 3
     }
   ],
   "comments": [

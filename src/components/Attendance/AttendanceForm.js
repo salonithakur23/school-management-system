@@ -104,7 +104,7 @@ const AttendanceForm = () => {
                         <Row>
 
                             <div className="col-sm-4 mt-3 position-relative">
-                                <label className="label">Student Name</label>
+                                <label className="form-label">Student Name</label>
                                 <input type="text" className="form-control"
                                     value={rollno}
                                     onChange={(event) => setRollno(event.target.value)}
@@ -112,7 +112,7 @@ const AttendanceForm = () => {
                             </div>
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Class Name</label>
+                                <label className="form-label">Class Name</label>
                                 <input type="text" className="form-control"
                                      value={stuname}
                                      onChange={(event) => setStuname(event.target.value)}
@@ -120,7 +120,7 @@ const AttendanceForm = () => {
                             </div>
 
                             <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Date</label>
+                                <label className="form-label">Date</label>
                                 <input type="date" className="form-control"
                                   value={date}
                                   onChange={(event) => setDate(event.target.value)}
@@ -129,7 +129,7 @@ const AttendanceForm = () => {
 
                             </div>
                             {/* <div className="col-md-4 mt-3  position-relative">
-                                <label className="label">Registration Fees</label>
+                                <label className="form-label">Registration Fees</label>
                                 <input type="text" className="form-control"
                                 
                                 />

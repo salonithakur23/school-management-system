@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button, Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+
 import { VscStarFull } from "react-icons/vsc";
 // import "./pages.css";
 
@@ -101,13 +101,15 @@ const ModalCamp = ({
 
 
               <Col sm={4}>
-                <div className="mod-img" > </div>
+                <div  className="mod-img" >
+                  <img className="modal1"  src="img/ggg.jpg" />
+                   </div>
                 <p className="img-text"> Image of student</p>
 
                 <div >
                  
 
-                  <Button variant="danger" className="edit-btn"> Edit</Button>
+                  <Button  className="edit-btn"> Edit</Button>
 
 
                 </div>

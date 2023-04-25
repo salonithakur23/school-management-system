@@ -63,7 +63,7 @@ const Stationary = ({ stationary }) => {
 
             <td>
             
-              <button style={{
+              {/* <button style={{
                 backgroundColor: "gray",
                 width: "100px",
                 height: "30px",
@@ -72,7 +72,7 @@ const Stationary = ({ stationary }) => {
                 onClick={() => handleModel(stationary)}
               >
                 View
-              </button>
+              </button> */}
           
             </td>
             {open && (
