@@ -38,7 +38,7 @@ const ModalComp = ({
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title>Student Teacher Details</Modal.Title>
+        <Modal.Title>Teacher Details</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Container>
@@ -76,9 +76,12 @@ const ModalComp = ({
           </Col>
 
           <Col sm={4}>
-            <div className="mod-img" > </div>
+            <div className="mod-img" > 
+            <img className="tea-img" src="teacher1.jpg" />
+            
+            </div>
             <p className="img-text"> Image of student</p>
-              <Button variant="danger"  className="edit-btn">Edit</Button>
+              <Button  className="edit-btn">Edit</Button>
           </Col>
         </Row>
       </Container>

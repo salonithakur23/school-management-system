@@ -84,7 +84,7 @@ const DetailList = () => {
 
 
 
-      <div className="post-table">
+      <div className="posttable">
 
       <h5 className="w3-center w3-flat-midnight-blue w3-padding-48 w3-border-blue-grey w3-grey text text-center mb-5 mt-3">Teacher Details</h5>
 

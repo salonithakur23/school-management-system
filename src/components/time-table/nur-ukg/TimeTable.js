@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import MainLayout from '../../Layouts/MainLayout';
+<<<<<<< Updated upstream
 import { Button, Form, Table } from 'react-bootstrap';
+=======
+import { Button, Container, Form, Row,Col, Table } from 'react-bootstrap';
+>>>>>>> Stashed changes
 import { AiFillDashboard,AiFillEdit ,AiFillDelete} from "react-icons/ai";
 // import { addtime } from '../../../reducer/action/TimeTableAction';
 import { addtime } from '../../Redux/Timetable/action';
@@ -58,6 +62,7 @@ const TimeTable = () => {
   const [fri, setFri] = useState("");
   const [sat, setSat] = useState("");
   const [classname1, setClassname1] = useState("");
+  const [tename, setTename] = useState("");
 
 
 
@@ -69,7 +74,7 @@ const TimeTable = () => {
       && period15 && period16 && period17 && period18 && period19 && period20 && period21
       && period22 && period23 && period24 && period25 && period26 && period27 && period28 && period29
       && period30 && period31 && period32 && period33 && period34 && period35
-      && mon && tues && wed && thur && fri && sat &&classname1
+      && mon && tues && wed && thur && fri && sat &&classname1 && tename
     ) {
       dispatch(addtime({
         period, period1, period2, period3, period4, period5, period6, period7, period8,
@@ -77,7 +82,7 @@ const TimeTable = () => {
         period18, period19, period20, period21, period22, period23, period24, period25, period26,
         period27, period28, period29, period30, period31, period32, period33, period34, period35,
         period27, period28, period29, period30, period31, period32, period33, period34, period35,
-        mon, tues, wed, thur, fri, sat,classname1
+        mon, tues, wed, thur, fri, sat,classname1,tename
       }));
       // setImage1("");
       setPeriod("");
@@ -123,6 +128,8 @@ const TimeTable = () => {
       setFri("");
       setSat("");
       setClassname1("");
+      setTename("");
+
 
 
     }
@@ -171,7 +178,35 @@ const TimeTable = () => {
 
         <form onSubmit={handleSubmit}>
 
-        <Form.Select className='tableOption' value={classname1} onChange={(event) => setClassname1(event.target.value)} >
+<Container>
+  <Row>
+
+  <div class="col-md-4  mt-3  position-relative">
+              <label className="form-label">Class</label>
+              <select class="form-select" value={classname1} onChange={(event) => setClassname1(event.target.value)} required  >
+
+              <option>Choose</option>
+              <option >Class Nursery</option>
+              <option>Class L.K.G</option>
+              <option>Class U.K.G</option>
+              <option>Class 1</option>
+              <option>Class 2</option>
+              <option>Class 3</option>
+              <option>Class 4</option>
+              <option>Class 5</option>
+
+              </select>
+            </div>
+
+            <div class="col-md-4  mt-3  position-relative">
+              <label className="form-label">Teacher name</label>
+              <input type="text" class="form-control" value={tename} onChange={(event) => setTename(event.target.value)} required />
+            </div>
+
+
+    {/* <Col sm={4}> */}
+    {/* <div class="col-md-8  mt-3  position-relative">
+    <Form.Select className='tableOption' value={classname1} onChange={(event) => setClassname1(event.target.value)} >
               <option>Choose</option>
               <option >Class Nursery</option>
               <option>Class L.K.G</option>
@@ -183,6 +218,15 @@ const TimeTable = () => {
               <option>Class 5</option>
            
             </Form.Select> 
+            </div> */}
+
+
+  </Row>
+</Container>
+        
+
+           
+
             
             <br/>
 
@@ -199,6 +243,7 @@ const TimeTable = () => {
                 <th>IVth Period</th>
                 <th>Vth Period</th>
                 <th>VIth Period</th>
+                
 
               </tr>
             </thead>

@@ -86,7 +86,7 @@ const LeaveForm = () => {
 
 
 
-            <div className='form-div' >
+            <div className='posttable' >
                 <Container>
 
                     <form className="row g-4 p-3 registration-form" onSubmit={handleSubmit}>

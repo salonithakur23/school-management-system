@@ -13,8 +13,15 @@ const NurUkg = ({time}) => {
      <tbody>
 
      <div>
-    {time.classname1}
-     </div>
+    {time.classname1} 
+     </div> <span>{time.tename}</span>
+
+{/* <tr>
+      <td> {time.classname1}</td>
+      <td> {time.tename} </td>
+
+     </tr> */}
+
 
      <tr>
      <td>{time.mon}</td>
@@ -79,6 +86,8 @@ const NurUkg = ({time}) => {
      <td>{time.period34}</td>
      <td>{time.period35}</td>
      </tr>
+
+     
     
 
 

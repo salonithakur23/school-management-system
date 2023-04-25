@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button, Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+
 import { VscStarFull } from "react-icons/vsc";
 // import "./pages.css";
 
@@ -109,7 +109,7 @@ const ModalCamp = ({
                 <div >
                  
 
-                  <Button variant="danger" className="edit-btn"> Edit</Button>
+                  <Button  className="edit-btn"> Edit</Button>
 
 
                 </div>
