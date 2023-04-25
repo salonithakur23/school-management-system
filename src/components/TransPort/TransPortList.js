@@ -75,7 +75,27 @@ const TransPortList = () => {
         </Row>
       </Container>
 
-     
+      {/* <p className='dasfee'>Dasboard /View TransPortation</p>
+      <div className='M-div'>
+        <div className='dfelx'>
+          <Link to="/tranportform ">
+            <button className='btns'>+ Create</button>
+          </Link>
+          <button className='next-btn'>
+          <span style={{marginLeft:"-10px"}}>  <AiFillSetting /></span>
+            Setting
+          </button>
+          <button className='next-btn'>
+            <AiFillEdit />
+            Edit
+          </button>
+          <button className='next-btn'>
+          <span style={{marginLeft:"-10px"}}><AiFillDelete /></span>
+            Delete
+          </button>
+        </div>
+      </div> */}
+    
 
 
       <p className='add'

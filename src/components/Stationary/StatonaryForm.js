@@ -45,7 +45,7 @@ const StationaryForm = () => {
 
 
     return (
-        <>
+        <>  
         <MainLayout />
         <Container style={{ width: "90%" }} >
         <Table striped bordered hover className='main-table'>

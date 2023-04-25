@@ -12,10 +12,7 @@ const Fees = ({ fees }) => {
   const dispatch = useDispatch();
 
 
-  const [isActive, setIsActive] = useState(false);
-  const handleClick = () => {
-    setIsActive(!isActive);
-  }
+ 
 
 
   const handleModel = () => {

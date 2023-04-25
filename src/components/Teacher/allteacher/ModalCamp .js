@@ -90,3 +90,6 @@ const ModalComp = ({
 };
 
 export default ModalComp;
+
+// handleUpdateClick(request).
+// navigate(`/update/${id,request}`)

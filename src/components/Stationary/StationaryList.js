@@ -42,6 +42,24 @@ const StationaryList = () => {
     <>
       <MainLayout />
 
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard /View TransPortation</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div'>
+                
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/stationaryform">Create</Link>
+                    </Button>
 
       <Container style={{ width: "90%" }} >
         <Table striped bordered hover className='main-table'>
@@ -78,7 +96,7 @@ const StationaryList = () => {
           <hr />
         </Row>
       </Container>
-     
+  
 
       <div className='post-table'>
         <h2 className="w3-center w3-flat-midnight-blue

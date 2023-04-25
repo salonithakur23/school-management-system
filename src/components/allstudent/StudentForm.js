@@ -130,7 +130,7 @@ const StudentForm = () => {
       <div style={{ padding: "20px", border: "1px solid", margin: "10px",marginTop:"50px" }}>
 
         <Form onSubmit={handleSubmit}>
-          <Container className="main-form">
+          <Container>
             <Row>
 
               <div className="col-sm-4 mt-3 position-relative">
@@ -209,7 +209,7 @@ const StudentForm = () => {
 
 
               <div className="col-md-4 mt-3  position-relative">
-                <label className="label">Board</label>
+                <label className="form-label">Board</label>
                 <input type="text" className="form-control"
                   value={board} onChange={(event) => setBoard(event.target.value)}
                 />

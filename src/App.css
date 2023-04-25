@@ -38,13 +38,13 @@
   }
 }
 
-.label {
+/* .label {
   margin-left: -65%;
 }
 
 .label2 {
   margin-left: -48%;
-}
+} */
 
 .remark {
   margin-left: -90%;
@@ -165,6 +165,11 @@
   width: 30%;
   margin: auto !important;
   margin-top: 50px !important;
+}
+.edit-btn{
+/* margin: auto !important; */
+width: 150px;
+margin-left: 120px !important;
 }
 
 
@@ -470,19 +475,19 @@ table {
   margin-left: 310px !important;
 }
 
-.main-form {
+/* .main-form {
   padding: 20px 100px 20px 100px;
-}
+} */
 
 .main-div {
   padding: 20px 10px 20px 10px !important;
 }
 
 @media screen and (min-width: 300px) and (max-width: 922px) {
-  .main-form {
+  /* .main-form {
     padding: 20px 10px 20px 10px !important;
     
-  }
+  } */
   .addCa{
     /* margin: auto; */
     margin-left: 100px;
@@ -566,9 +571,9 @@ table {
   background-color: #000000;
 }
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;

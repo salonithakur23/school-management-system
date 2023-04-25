@@ -6,8 +6,8 @@ import './trans.css'
 import { useDispatch } from 'react-redux';
 import { addTransport } from '../Redux/TransPortSlice/action';
 import { RiArrowGoBackLine } from 'react-icons/ri';
-import MainLayout from '../Layouts/MainLayout';
 import { IoIosCreate } from 'react-icons/io';
+import MainLayout from '../Layouts/MainLayout';
 
 
 
@@ -33,11 +33,11 @@ const TransPortForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (busname && drivername && conductorname && dvrivernob && conductornob && totalstdnt
-             && busroute && stuname && stuaddress && fname && picpoint && distance && pictime  && charge
+            && busroute && stuname && stuaddress && fname && picpoint && distance && pictime && charge
         ) {
             dispatch(addTransport({
-                busname, drivername, conductorname, dvrivernob, conductornob,totalstdnt, busroute,
-                stuname, stuaddress, fname,picpoint,distance,pictime,charge
+                busname, drivername, conductorname, dvrivernob, conductornob, totalstdnt, busroute,
+                stuname, stuaddress, fname, picpoint, distance, pictime, charge
             }
             ));
             setBusname("");
@@ -104,7 +104,9 @@ const TransPortForm = () => {
             
 
 
-            <div style={{ padding: "40px", border: "1px solid", margin: "10px",marginTop:"50px" }}>
+
+
+            <div style={{ padding: "40px", border: "1px solid", margin: "10px", marginTop: "50px" }}>
 
                 <Form onSubmit={handleSubmit}>
                     <Container className="main-form">
@@ -201,7 +203,7 @@ const TransPortForm = () => {
 
 
 
-                            
+
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label">Pic Point </label>
                                 <input type="text" className="form-control"
@@ -209,7 +211,7 @@ const TransPortForm = () => {
                                     onChange={(event) => setPicpoint(event.target.value)}
                                 />
                             </div>
-                            
+
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label">Pic Time </label>
                                 <input type="text" className="form-control"
@@ -217,7 +219,7 @@ const TransPortForm = () => {
                                     onChange={(event) => setPictime(event.target.value)}
                                 />
                             </div>
-                            
+
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label"> Distance</label>
                                 <input type="text" className="form-control"
@@ -225,7 +227,7 @@ const TransPortForm = () => {
                                     onChange={(event) => setDistance(event.target.value)}
                                 />
                             </div>
-                            
+
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label">Charges</label>
                                 <input type="text" className="form-control"

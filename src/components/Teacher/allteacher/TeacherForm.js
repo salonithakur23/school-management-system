@@ -52,8 +52,9 @@ const TeacherForm = () => {
       && gender1 && board1 && aadhar1 && contact1 && category1 && father1 && mother1 && foccupation1 && moccupation1 && address1 && religion1
     ) {
       dispatch(adddetail({
-        firstname1, lastname1, join, email, qufication, experience, special, lastquali, marriage, dob1, gender1, board1,
-        aadhar1, contact1, category1, father1, mother1, foccupation1, moccupation1, address1, religion1
+        firstname1, lastname1, join, email, qufication, experience, special, lastquali, marriage,
+         dob1, gender1, board1,  aadhar1, contact1, category1, father1, mother1, foccupation1,
+          moccupation1, address1, religion1
 
       }));
       // setImage1("");
@@ -103,6 +104,40 @@ const TeacherForm = () => {
             <thead>
               <tr>
                 <th>
+                  <div className='table-div'>
+                
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/detaillist">Go Back</Link>
+                    </Button>
+
+                    <Button className='table-btn'  variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
+
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+                    
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
+
+      {/* <Table striped bordered hover style={{ textAlign: "left" }}>
+        <thead>
+          <tr>
+            <th><h5><AiFillDashboard /> &nbsp; </h5></th>
+          </tr>
+        </thead>
+      </Table>
+      <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
                   <div className='table-div' >
                  
                     <Button className='table-btn' variant="light" >
@@ -121,19 +156,10 @@ const TeacherForm = () => {
                 </th>
               </tr>
             </thead>
-          </Table>
-          <hr />
-        </Row>
-      </Container>
-
-      
-     
+          </Table> */}
 
       <div className='form-div'  >
-
         <Container>
-
-
           <form className="row g-4 p-3   registration-form  " onSubmit={handleSubmit} >
             {/* <h2 className='text-center  mb-5 '>Teacher Registration from</h2> */}
 
@@ -143,48 +169,47 @@ const TeacherForm = () => {
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">First name</label>
+              <label className="label">First name</label>
               <input type="text" class="form-control" value={firstname1} onChange={(event) => setFirstname1(event.target.value)} required />
-              {/* {firstname.length==0 && <span className='text-danger'>Enter the name</span>} */}
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Last name</label>
+              <label className="label">Last name</label>
               <input type="text" class="form-control" value={lastname1} onChange={(event) => setLastname1(event.target.value)} required />
 
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Joining date</label>
+              <label className="label">Joining date</label>
               <input type="text" class="form-control" value={join} onChange={(event) => setJoin(event.target.value)} required />
 
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Email</label>
+              <label className="label">Email</label>
               <input type="email" class="form-control" value={email} onChange={(event) => setEmail(event.target.value)} required />
 
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Qualification</label>
+              <label className="label">Qualification</label>
               <input type="text" class="form-control" value={qufication} onChange={(event) => setQufication(event.target.value)} required />
 
             </div>
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Experience</label>
+              <label className="label">Experience</label>
               <input type="text" class="form-control" value={experience} onChange={(event) => setExperience(event.target.value)} required />
 
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Gender</label>
+              <label className="label">Gender</label>
               <select class="form-select" value={gender1} onChange={(event) => setGender1(event.target.value)} required  >
 
                 <option >choose</option>
@@ -197,89 +222,89 @@ const TeacherForm = () => {
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Last qualification</label>
+              <label className="label">Last qualification</label>
               <input type="text" class="form-control" value={lastquali} onChange={(event) => setLastquali(event.target.value)} required />
 
             </div>
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Marriage State</label>
+              <label className="label">Marriage State</label>
               <input type="text" class="form-control" value={marriage} onChange={(event) => setMarriage(event.target.value)} required />
 
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">DOB</label>
+              <label className="label">DOB</label>
               <input type="text" class="form-control" value={dob1} onChange={(event) => setDob1(event.target.value)} required />
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Specialisation in subject</label>
+              <label className="label">Specialisation in subject</label>
               <input type="text" class="form-control" value={special} onChange={(event) => setSpecial(event.target.value)} required />
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Board</label>
+              <label className="label">Board</label>
               <input type="text" class="form-control" value={board1} onChange={(event) => setBoard1(event.target.value)} required />
             </div>
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Aadhar no</label>
+              <label className="label">Aadhar no</label>
               <input type="number" class="form-control" value={aadhar1} onChange={(event) => setAadhar1(event.target.value)} required />
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Contact</label>
+              <label className="label">Contact</label>
               <input type="number" class="form-control" value={contact1} onChange={(event) => setContact1(event.target.value)} required />
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Category</label>
+              <label className="label">Category</label>
               <input type="text" class="form-control" value={category1} onChange={(event) => setCategory1(event.target.value)} required />
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Father name</label>
+              <label className="label">Father name</label>
               <input type="text" class="form-control" value={father1} onChange={(event) => setFather1(event.target.value)} required />
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Mother name</label>
+              <label className="label">Mother name</label>
               <input type="text" class="form-control" value={mother1} onChange={(event) => setMother1(event.target.value)} required />
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Father's ocupation</label>
+              <label className="label">Father's ocupation</label>
               <input type="text" class="form-control" value={foccupation1} onChange={(event) => setFoccupation1(event.target.value)} required />
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Mother's ocupation</label>
+              <label className="label">Mother's ocupation</label>
               <input type="text" class="form-control" value={moccupation1} onChange={(event) => setMoccupation1(event.target.value)} required />
             </div>
 
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Address</label>
+              <label className="label">Address</label>
               <input type="text" class="form-control" value={address1} onChange={(event) => setAddress1(event.target.value)} required />
             </div>
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">Religion</label>
+              <label className="label">Religion</label>
               <input type="text" class="form-control" value={religion1} onChange={(event) => setReligion1(event.target.value)} required />
             </div>
 
             <div class="col-md-4 position-relative">
-              <label class="form-label">City</label>
+              <label className="label">City</label>
               <input type="text" class="form-control" value={city1} onChange={(event) => setCity1(event.target.value)} required />
             </div>
 

@@ -117,14 +117,14 @@ const SalleryForm = () => {
 
 
     <div class="col-md-4 position-relative">
-      <label class="form-label">Name</label>
+      <label className="label">Name</label>
       <input type="text" class="form-control"
        value={name2} onChange={(event) => setName2(event.target.value)} required 
        />
       </div>
 
       <div class="col-md-4 position-relative">
-      <label class="form-label">Date</label>
+      <label className="label">Date</label>
       <input type="text" class="form-control"
        value={date2} onChange={(event) => setDate2(event.target.value)} required 
        />
@@ -132,14 +132,14 @@ const SalleryForm = () => {
 
 
       <div class="col-md-4 position-relative">
-      <label class="form-label">Bank Name</label>
+      <label className="label">Bank Name</label>
       <input type="text" class="form-control"
        value={bankname} onChange={(event) => setBankname(event.target.value)} required 
        />
       </div>
 
       <div class="col-md-4 position-relative">
-      <label class="form-label">Ifsc code</label>
+      <label className="label">Ifsc code</label>
       <input type="text" class="form-control"
        value={ifsc} onChange={(event) => setIfsc(event.target.value)} required 
        />
@@ -147,7 +147,7 @@ const SalleryForm = () => {
 
 
       <div class="col-md-4 position-relative">
-      <label class="form-label">Account no</label>
+      <label className="label">Account no</label>
       <input type="text" class="form-control"
        value={account} onChange={(event) => setAccount(event.target.value)} required 
        />
@@ -155,7 +155,7 @@ const SalleryForm = () => {
 
 
       <div class="col-md-4 position-relative">
-      <label class="form-label">Holder name</label>
+      <label className="label">Holder name</label>
       <input type="text" class="form-control"
        value={holder} onChange={(event) => setHolder(event.target.value)} required 
        />
@@ -163,21 +163,21 @@ const SalleryForm = () => {
 
 
       <div class="col-md-4 position-relative">
-      <label class="form-label">Sallery</label>
+      <label className="label">Sallery</label>
       <input type="text" class="form-control"
        value={sallery} onChange={(event) => setSallery(event.target.value)} required 
        />
       </div>
 
       <div class="col-md-4 position-relative">
-      <label class="form-label"> leave</label>
+      <label className="label"> leave</label>
       <input type="text" class="form-control"
        value={leave} onChange={(event) => setLeave(event.target.value)} required 
        />
       </div>
 
       <div class="col-md-4 position-relative">
-      <label class="form-label">Total Sallery</label>
+      <label className="label">Total Sallery</label>
       <input type="text" class="form-control"
        value={tsallery} onChange={(event) => setTsallery(event.target.value)} required 
        />

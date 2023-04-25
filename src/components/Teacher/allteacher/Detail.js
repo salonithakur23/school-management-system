@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import ShowList from "./ShowList";
 import { useNavigate } from "react-router-dom";
-import ModalCamp from "../../allstudent/ModalCamp ";
+import ModalComp from './ModalCamp ';
+
 
 
 
@@ -15,10 +16,25 @@ const Detail = ({ detail }) => {
 
   const [open, setOpen] = useState(false);
   const [user, setUser] = useState({});
+  const navigate = useNavigate("");
+
+  
+
 
   const handleModel = () => {
     setOpen(true);
     setUser(detail);
+
+  }
+  const handleDelete = async (id) => {
+    if (window.confirm("Are you sure to delete that user ?")) {
+      try {
+        setOpen(false);
+
+      } catch (err) {
+        console.log(err)
+      }
+    }
 
   }
 
@@ -59,9 +75,8 @@ const Detail = ({ detail }) => {
 
 
 
-
           <td>
-         
+
             <button style={{
               backgroundColor: "gray",
               width: "100px",
@@ -72,16 +87,17 @@ const Detail = ({ detail }) => {
             >
               View
             </button>
-          
+
           </td>
           {open && (
-            <ModalCamp
+            <ModalComp
               open={open}
               setOpen={setOpen}
-          
               {...user}
             />
           )}
+
+
 
         </tr>
       </tbody>

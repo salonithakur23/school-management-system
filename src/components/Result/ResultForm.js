@@ -101,8 +101,8 @@ const ResultForm = () => {
 
            
             <div className='resultform'
-          
-             >
+
+            >
 
                 <Form onSubmit={handleSubmit}>
                     <Container className="main-form">

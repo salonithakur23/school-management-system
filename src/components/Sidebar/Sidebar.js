@@ -105,7 +105,10 @@ const Sidebar = ({children}) => {
       <div style={{width: isOpen ? "200px" : "50px"}} className='sidebar'>
         <div className='top_section'>
           <p style={{display: isOpen ? "block" : "none"}} className='logo'>
-          {/* <span>Travel Admin</span> */}
+          {/* <span>School</span> */}
+          {/* <div className='logo'>
+            <img className='set-logo' src='system.png' />
+          </div> */}
 
             
           </p>

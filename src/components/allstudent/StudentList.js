@@ -7,6 +7,7 @@ import Table from 'react-bootstrap/Table';
 import Student from './Student';
 import MainLayout from '../Layouts/MainLayout';
 import './allstudent.css'
+import { RiArrowGoBackFill } from 'react-icons/ri';
 import { Button, Container, Row } from 'react-bootstrap';
 import { IoIosCreate } from 'react-icons/io';
 

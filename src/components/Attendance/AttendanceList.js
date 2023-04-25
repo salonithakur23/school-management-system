@@ -11,7 +11,7 @@ import { IoIosCreate } from 'react-icons/io';
 
 const AttendanceList = () => {
 
-const [name,setName]=useState("")
+    const [name, setName] = useState("")
 
     const [showtext, setShowtext] = useState("View Class Attendens")
     const handletext = (e) => {
@@ -121,11 +121,10 @@ const [name,setName]=useState("")
                       /> 
                 </div>
 
-                <div style={{ width: "20%", height: "20px",  marginTop: "30px" }}>
-                    {/* <Form.Label className='labels'>Fess Structure Classes wise</Form.Label> */}
+                <div style={{ width: "20%", height: "20px", marginTop: "30px" }}>
+                  
                     <Form.Select
                         onChange={(e) => handletext(e)}
-                    // defaultValue="Choose..."
                     >
                         <option>Choose</option>
                         <option value="1">Nursury Class</option>
@@ -137,12 +136,10 @@ const [name,setName]=useState("")
                         <option value="7">4th Class </option>
                         <option value="8">5th Class </option>
                     </Form.Select>
-                    <div className='show'>
-
-                    </div>
+                  
 
 
-                    
+
                 </div>
                 
               

@@ -65,13 +65,13 @@ const LeaveForm = () => {
             <thead>
               <tr>
                 <th>
-                  <div className='table-div' >
-                 
+                  <div className='table-div'>
+                
                     <Button className='table-btn' variant="light" >
-                      <IoIosCreate />&nbsp;<Link to="/leavelist">Create</Link>
+                      <IoIosCreate />&nbsp;<Link to="/leavelist">Go Back</Link>
                     </Button>
 
-                    <Button className='table-btn' variant="light" >
+                    <Button className='table-btn'  variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
                     </Button>
 
@@ -88,8 +88,9 @@ const LeaveForm = () => {
         </Row>
       </Container>
 
-           
+          
 
+           
 
 
             <div className='form-div' >
@@ -98,15 +99,15 @@ const LeaveForm = () => {
                     <form className="row g-4 p-3 registration-form" onSubmit={handleSubmit}>
 
                         <div class="col-md-4 position-relative">
-                            <label class="form-label">Name</label>
+                            <label className="label">Name</label>
                             <input type="text" class="form-control"
                                    value={name1} onChange={(event) => setName1(event.target.value)}
                                  />
-                            {/* {firstname.length==0 && <span className='text-danger'>Enter the name</span>} */}
+                      
                         </div>
 
                         <div class="col-md-4 position-relative">
-                            <label class="form-label">Class</label>
+                            <label className="label">Class</label>
                             <input type="text" class="form-control"
                                    value={class1} onChange={(event) => setClass1(event.target.value)}
                                  />
@@ -115,7 +116,7 @@ const LeaveForm = () => {
 
 
                         <div class="col-md-4 position-relative">
-                            <label class="form-label">Father name</label>
+                            <label className="label">Father name</label>
                             <input type="text" class="form-control"
                                value={father} onChange={(event) => setFather(event.target.value)}
                             />
@@ -123,7 +124,7 @@ const LeaveForm = () => {
                         </div>
 
                         <div class="col-md-4 position-relative">
-                            <label class="form-label">Date </label>
+                            <label className="label">Date </label>
                             <input type="text" class="form-control"
                                value={date2} onChange={(event) => setDate2(event.target.value)}
                             />
@@ -131,7 +132,7 @@ const LeaveForm = () => {
                         </div>
 
                         <div class="col-md-4 position-relative">
-                            <label class="form-label">Check by</label>
+                            <label className="label">Check by</label>
                             <input type="text" class="form-control"
                                value={check} onChange={(event) => setCheck(event.target.value)}
                             />
@@ -139,8 +140,8 @@ const LeaveForm = () => {
                         </div>
 
 
-                        <div class="mb-4">
-                            <label for="exampleFormControlTextarea1" class="form-label">Reason for leave</label>
+                        <div class="mb-4 ">
+                            <label for="exampleFormControlTextarea1" >Reason for leave</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                              value={reason} onChange={(event) => setReason(event.target.value)}
                             ></textarea>

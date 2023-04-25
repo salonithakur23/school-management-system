@@ -1,0 +1,26 @@
+{
+  "sallerys": [
+    {
+      "name2": "Pooja  Mishra",
+      "date2": "2023-04-15",
+      "bankname": "SBI",
+      "ifsc": "sbi23446",
+      "account": "98765432132",
+      "holder": "JP Mishra",
+      "sallery": "11",
+      "leave": "2",
+      "tsallery": "11",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -10,7 +10,7 @@ export const fetchResult = createAsyncThunk('results/fetchResult', async () => {
   })
   
   export const addResult = createAsyncThunk('results/addResult', async (result) => {
-    const response = await fetch(`http://localhost:7001/results`, {
+    const response = await fetch(`http://localhost:7001/c`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
