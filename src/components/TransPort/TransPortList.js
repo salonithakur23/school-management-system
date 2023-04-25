@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { Table } from 'react-bootstrap'
+import { Button, Container, Row, Table } from 'react-bootstrap'
 // import ModalCamp from './ModalCamp '
 import MainLayout from '../Layouts/MainLayout'
 import '../../App.css'
 import { Link } from 'react-router-dom'
-import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai'
+import { AiFillDashboard, AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai'
 import { fetchTransport } from '../Redux/TransPortSlice/action'
 import TransPort from './TransPort'
+import { IoIosCreate } from 'react-icons/io'
 
 
 
@@ -38,7 +39,44 @@ const TransPortList = () => {
   return (
     <>
       <MainLayout />
-      <p className='dasfee'>Dasboard /View TransPortation</p>
+
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard /View TransPortation</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div'>
+                
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/tranportform">Go Back</Link>
+                    </Button>
+
+                    <Button className='table-btn'  variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
+
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+                    
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
+
+      {/* <p className='dasfee'>Dasboard /View TransPortation</p>
       <div className='M-div'>
         <div className='dfelx'>
           <Link to="/tranportform ">
@@ -57,7 +95,7 @@ const TransPortList = () => {
             Delete
           </button>
         </div>
-      </div>
+      </div> */}
     
 
 
