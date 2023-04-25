@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { AiFillDashboard, AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
+import { Container, Row, Col, Form, Button, Table } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { addTransport } from '../Redux/TransPortSlice/action';
 import { addResult } from '../Redux/ResultSlice/action';
 import { RiArrowGoBackLine } from 'react-icons/ri';
 import './result.css'
+import MainLayout from '../Layouts/MainLayout';
+import { IoIosCreate } from 'react-icons/io';
 
 
 
@@ -60,35 +62,48 @@ const ResultForm = () => {
 
     return (
         <>
+            <MainLayout />
+            <Container style={{ width: "90%" }} >
+                <Table striped bordered hover className='main-table'>
+                    <thead>
+                        <tr>
+                            <th><h5><AiFillDashboard /> &nbsp;Dasboard / Add Result Information</h5></th>
+                        </tr>
+                    </thead>
+                </Table>
+                <Row>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div className='table-div'>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <IoIosCreate />&nbsp;<Link to="/resultlist">Go Back</Link>
+                                        </Button>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillEdit />&nbsp;Bulk Edit
+                                        </Button>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillDelete />&nbsp;Bulk Delete
+                                        </Button>
+
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </Table>
+                    <hr />
+                </Row>
+            </Container>
 
 
-            <p className='dasfee'>Dasboard / Add Result Information</p>
-            <div className='M-div'>
-                <div className='dfelx'>
-                    <Link to="/resultlist ">
-                        <button className='btns'>
-                            <span className='spantext' ><RiArrowGoBackLine /></span>
-                            Go Back</button>
-                    </Link>
-                    <button className='next-btn'>
-
-                        <span className='spantext'>  <AiFillSetting /></span>
-                        Setting
-                    </button>
-                    <button className='next-btn'>
-                        <AiFillEdit />
-                        Edit
-                    </button>
-                    <button className='next-btn'>
-                        <span className='spantext'><AiFillDelete /></span>
-                        Delete
-                    </button>
-                </div>
-            </div>
 
             <div className='resultform'
-          
-             >
+
+            >
 
                 <Form onSubmit={handleSubmit}>
                     <Container className="main-form">

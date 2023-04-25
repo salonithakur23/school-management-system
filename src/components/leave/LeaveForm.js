@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import MainLayout from '../Layouts/MainLayout';
-import { Button, Container, Table } from 'react-bootstrap';
+import { Button, Container, Row, Table } from 'react-bootstrap';
 // import '../../style/main.css';
 import { AiFillDashboard,AiFillEdit,AiFillDelete } from "react-icons/ai";
 import { useDispatch } from 'react-redux';
@@ -9,6 +9,7 @@ import { addleave } from '../Redux/LeaveSlice/action';
 import {useNavigate} from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { RiArrowGoBackFill } from "react-icons/ri";
+import { IoIosCreate } from 'react-icons/io';
 
 
 const LeaveForm = () => {
@@ -51,28 +52,29 @@ const LeaveForm = () => {
         <>
             <MainLayout />
 
-            <Table striped bordered hover style={{ textAlign: "left" }}>
-                <thead>
-                    <tr>
-                        <th><h5><AiFillDashboard /> &nbsp; Dashboard / Leave-Application</h5></th>
-                    </tr>
-                </thead>
-            </Table>
 
-            <Table striped bordered hover>
+            <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp; Dashboard / Leave-Application</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
             <thead>
               <tr>
                 <th>
                   <div className='table-div'>
-                    <Button className='table-btn'variant="light" >
-                      <RiArrowGoBackFill />&nbsp;<Link to="/leavelist">Go Back</Link>
+                
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/leavelist">Go Back</Link>
                     </Button>
 
-
-                    <Button className='table-btn' variant="light" >
+                    <Button className='table-btn'  variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
                     </Button>
-
 
                     <Button className='table-btn' variant="light" >
                       <AiFillDelete />&nbsp;Bulk Delete
@@ -83,7 +85,13 @@ const LeaveForm = () => {
               </tr>
             </thead>
           </Table>
+          <hr />
+        </Row>
+      </Container>
 
+          
+
+           
 
 
             <div className='posttable' >

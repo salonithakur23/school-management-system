@@ -1,11 +1,11 @@
-.post-table{
+.posttable{
     border: solid 2px  rgb(179, 178, 178);
     width: 93%;
-    /* text-align: center !important; */
     margin: auto;
     margin-top: 50px !important;
     padding: 15px !important;
 }
+
 .spantext{
     margin-left: -10px;
   }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addPost } from '../Redux/PostsSlice/action';
 import { Button, Container, Row, Form, Table } from "react-bootstrap";
 import { BiCaretRight } from "react-icons/bi";
@@ -119,8 +119,7 @@ const StudentForm = () => {
 
 
 
-      <div className='post-table'  >
-
+      <div className='posttable'>
 
         <Form onSubmit={handleSubmit}>
           <Container fluid >
@@ -128,12 +127,7 @@ const StudentForm = () => {
 
 
 
-
-
-              <h5 className='per-detail' > <BiCaretRight /> Personal details</h5>
-
-
-
+        <h5 className='per-detail' > <BiCaretRight /> Personal details</h5>
 
 
               <div className="col-md-4 mt-3  position-relative">

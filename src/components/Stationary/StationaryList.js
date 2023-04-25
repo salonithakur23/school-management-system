@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { Table } from 'react-bootstrap'
+import { Button, Container, Row, Table } from 'react-bootstrap'
 import ModalCamp from './ModalCamp '
 import MainLayout from '../Layouts/MainLayout'
 import '../../App.css'
 import { Link } from 'react-router-dom'
-import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai'
+import { AiFillDashboard, AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai'
 import { RiArrowGoBackFill, RiArrowGoBackLine } from "react-icons/ri";
 import { MdCreateNewFolder } from 'react-icons/md'
 import Stationary from './Stationary'
 import { fetchStationary } from '../Redux/Stationary/action'
+import { IoIosCreate } from 'react-icons/io'
 
 
 
@@ -40,35 +41,43 @@ const StationaryList = () => {
   return (
     <>
       <MainLayout />
-      <p className='dasfee'>Dasboard /View TransPortation</p>
-      <div className='M-div'>
-        <div className='dfelx'>
-          
-          <Link to="/stationaryform ">
-        
-            <button className='btns'>+ Create</button>
-          
-          </Link>
-          <button className='next-btn'>
-          <span style={{ marginLeft: "-10px" }}>  <AiFillSetting /></span>
-            Setting
-          </button>
-          <button className='next-btn'>
-            <AiFillEdit />
-            Edit
-          </button>
-          <button className='next-btn'>
-          <span style={{ marginLeft: "-10px" }}><AiFillDelete /></span>
-            Delete
-          </button>
-        </div>
-      </div>
-    
 
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard /View TransPortation</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div'>
+                
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/stationaryform">Create</Link>
+                    </Button>
 
-      <p className='add'
-      > View Stationary Details</p>
-      <br />
+                    <Button className='table-btn'  variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
+
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+                    
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
+  
 
       <div className='posttable'>
         <h2 className="w3-center w3-flat-midnight-blue

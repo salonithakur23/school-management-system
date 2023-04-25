@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import MainLayout from '../Layouts/MainLayout'
 import { Link } from 'react-router-dom';
-import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
+import { AiFillDashboard, AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
 import { fetchAttendance } from '../Redux/Attendance/action';
 import { useSelector, useDispatch } from 'react-redux'
-import { Button, Form, Table } from 'react-bootstrap';
+import { Button, Container, Form, Row, Table } from 'react-bootstrap';
 import Attendance from './Attendance'
 import './att.css'
+import { IoIosCreate } from 'react-icons/io';
 
 const AttendanceList = () => {
 
-const [name,setName]=useState("")
+    const [name, setName] = useState("")
 
     const [showtext, setShowtext] = useState("View Class Attendens")
     const handletext = (e) => {
@@ -74,48 +75,64 @@ const [name,setName]=useState("")
     return (
         <>
             <MainLayout />
-            <p className='dasfee'>Dasboard / View Student  Attendance Page</p>
-            <div className='M-div'>
-                <div className='dfelx'>
-                    <Link to="/attendance ">
-                    <button className='btns'>
-                        Create</button>
-                    </Link>
-                    <button className='next-btn'>
-                       
-                        <span style={{marginLeft:"-10px"}}> <AiFillSetting /></span>
-                        Setting
-                    </button>
-                    <button className='next-btn'>
-                        <AiFillEdit />
-                        Edit
-                    </button>
-                    <button className='next-btn'>
-                        <span style={{marginLeft:"-10px"}}>   <AiFillDelete /></span>
-                      
-                        Delete
-                    </button>
-                </div>
-            </div>
+            <Container style={{ width: "90%" }} >
+                <Table striped bordered hover className='main-table'>
+                    <thead>
+                        <tr>
+                            <th><h5><AiFillDashboard /> &nbsp; Dasboard / View Student  Attendance Page</h5></th>
+                        </tr>
+                    </thead>
+                </Table>
+                <Row
+                >
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div className='table-div'>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <IoIosCreate />&nbsp;<Link to="/attendance">Create</Link>
+                                        </Button>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillEdit />&nbsp;Bulk Edit
+                                        </Button>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillDelete />&nbsp;Bulk Delete
+                                        </Button>
+
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </Table>
+                    <hr />
+                </Row>
+            </Container>
+
+
+          
+           
             <div className='d-flex'>
                 <div style={{ width: "20%", height: "20px", marginLeft: "50px", marginTop: "30px" }}>
-                    {/* <Form.Label className='labels'>Fess Structure Classes wise</Form.Label> */}
-                    <input  
-                    style={{height:"40px",marginLeft:"-20px"}}
-                     type='text'
-                     placeholder='Class Teacher Name'
-                      />
+                  
+                    <input
+                        style={{ height: "40px", marginLeft: "-20px" }}
+                        type='text'
+                        placeholder='Class Teacher Name'
+                    />
 
                     <div className='show'>
 
                     </div>
                 </div>
 
-                <div style={{ width: "20%", height: "20px",  marginTop: "30px" }}>
-                    {/* <Form.Label className='labels'>Fess Structure Classes wise</Form.Label> */}
+                <div style={{ width: "20%", height: "20px", marginTop: "30px" }}>
+                  
                     <Form.Select
                         onChange={(e) => handletext(e)}
-                    // defaultValue="Choose..."
                     >
                         <option>Choose</option>
                         <option value="1">Nursury Class</option>
@@ -127,22 +144,16 @@ const [name,setName]=useState("")
                         <option value="7">4th Class </option>
                         <option value="8">5th Class </option>
                     </Form.Select>
-                    <div className='show'>
-
-                    </div>
+                  
 
 
-                    
+
                 </div>
-                
-                {/* <label htmlFor="date">Date</label> */}
-                    <input style={{width:"20%",height:"40px",marginTop:"30px",marginLeft:"30px"}}
-                        // id="date"
-                        type="date"
-                        // name="date"
-                        // value={date}
-                        // onChange={e => setDate(e.target.value)}
-                    />
+
+
+                <input style={{ width: "20%", height: "40px", marginTop: "30px", marginLeft: "30px" }}
+                    type="date"
+                />
             </div>
             <div style={{
                 width: "90%",

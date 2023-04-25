@@ -99,7 +99,6 @@ const TeacherForm = () => {
           </tr>
         </thead>
       </Table>
-
       
       <Table striped bordered hover>
             <thead>
@@ -128,7 +127,7 @@ const TeacherForm = () => {
             </thead>
           </Table>
 
-      <div className='post-table'  >
+      <div className='posttable'  >
 
       
 
@@ -142,54 +141,54 @@ const TeacherForm = () => {
   
           <h5 className='per-detail' > <BiCaretRight /> Personal details</h5>
            
-           <div class="col-md-4 position-relative">
+           <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">First name</label>
               <input type="text" className="form-control" value={firstname1} onChange={(event) => setFirstname1(event.target.value)} required />
               {/* {firstname.length==0 && <span className='text-danger'>Enter the name</span>} */}
             </div>
 
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Last name</label>
               <input type="text" class="form-control" value={lastname1} onChange={(event) => setLastname1(event.target.value)} required />
 
             </div>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">DOB</label>
               <input type="text" class="form-control" value={dob1} onChange={(event) => setDob1(event.target.value)} required />
             </div>
 
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Father name</label>
               <input type="text" class="form-control" value={father1} onChange={(event) => setFather1(event.target.value)} required />
             </div>
 
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Mother name</label>
               <input type="text" class="form-control" value={mother1} onChange={(event) => setMother1(event.target.value)} required />
             </div>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Marriage State</label>
               <input type="text" class="form-control" value={marriage} onChange={(event) => setMarriage(event.target.value)} required />
 
             </div>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Email</label>
               <input type="email" class="form-control" value={email} onChange={(event) => setEmail(event.target.value)} required />
 
             </div>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Address</label>
               <input type="text" class="form-control" value={address1} onChange={(event) => setAddress1(event.target.value)} required />
             </div>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Gender</label>
               <select class="form-select" value={gender1} onChange={(event) => setGender1(event.target.value)} required  >
 
@@ -205,74 +204,78 @@ const TeacherForm = () => {
 
 
 
+            <hr className='stuhr' />
 
          <h5 className='per-detail' > <BiCaretRight /> Qualification details</h5>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Qualification</label>
               <input type="text" class="form-control" value={qufication} onChange={(event) => setQufication(event.target.value)} required />
 
             </div>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Last qualification</label>
               <input type="text" class="form-control" value={lastquali} onChange={(event) => setLastquali(event.target.value)} required />
 
             </div>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Specialisation in subject</label>
               <input type="text" class="form-control" value={special} onChange={(event) => setSpecial(event.target.value)} required />
             </div>
 
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Board</label>
               <input type="text" class="form-control" value={board1} onChange={(event) => setBoard1(event.target.value)} required />
             </div>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Experience</label>
               <input type="text" class="form-control" value={experience} onChange={(event) => setExperience(event.target.value)} required />
 
             </div>
 
-            <h5 className='per-detail' > <BiCaretRight /> Other details</h5>
+            
+
+            <hr className='stuhr' />
+     <h5 className='per-detail' > <BiCaretRight /> Other details</h5>
 
 
-           <div class="col-md-4 position-relative">
+           <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Joining date</label>
               <input type="text" class="form-control" value={join} onChange={(event) => setJoin(event.target.value)} required />
 
             </div>
 
 
-         <div class="col-md-4 position-relative">
+         <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Aadhar no</label>
               <input type="number" class="form-control" value={aadhar1} onChange={(event) => setAadhar1(event.target.value)} required />
             </div>
 
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Contact</label>
               <input type="number" class="form-control" value={contact1} onChange={(event) => setContact1(event.target.value)} required />
             </div>
 
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Category</label>
               <input type="text" class="form-control" value={category1} onChange={(event) => setCategory1(event.target.value)} required />
             </div>
 
 
            
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Father's ocupation</label>
               <input type="text" class="form-control" value={foccupation1} onChange={(event) => setFoccupation1(event.target.value)} required />
             </div>
 
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Mother's ocupation</label>
               <input type="text" class="form-control" value={moccupation1} onChange={(event) => setMoccupation1(event.target.value)} required />
             </div>
@@ -280,12 +283,12 @@ const TeacherForm = () => {
 
            
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3  position-relative">
               <label className="form-label">Religion</label>
               <input type="text" class="form-control" value={religion1} onChange={(event) => setReligion1(event.target.value)} required />
             </div>
 
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  mt-3 pb-4  position-relative">
               <label className="form-label">City</label>
               <input type="text" class="form-control" value={city1} onChange={(event) => setCity1(event.target.value)} required />
             </div>

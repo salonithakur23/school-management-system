@@ -50,7 +50,7 @@ const DetailList = () => {
         <Table striped bordered hover className='main-table'>
           <thead>
             <tr>
-              <th><h5><AiFillDashboard /> &nbsp; Dashboard/ Student-details</h5></th>
+              <th><h5><AiFillDashboard /> &nbsp; Dashboard/ Teacher-details</h5></th>
             </tr>
           </thead>
         </Table>
