@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { AiFillDashboard, AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
+import { Container, Row, Col, Form, Button, Table } from 'react-bootstrap';
 import './trans.css'
 import { useDispatch } from 'react-redux';
 import { addTransport } from '../Redux/TransPortSlice/action';
 import { RiArrowGoBackLine } from 'react-icons/ri';
+import { IoIosCreate } from 'react-icons/io';
+import MainLayout from '../Layouts/MainLayout';
 
 
 
@@ -31,11 +33,11 @@ const TransPortForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (busname && drivername && conductorname && dvrivernob && conductornob && totalstdnt
-             && busroute && stuname && stuaddress && fname && picpoint && distance && pictime  && charge
+            && busroute && stuname && stuaddress && fname && picpoint && distance && pictime && charge
         ) {
             dispatch(addTransport({
-                busname, drivername, conductorname, dvrivernob, conductornob,totalstdnt, busroute,
-                stuname, stuaddress, fname,picpoint,distance,pictime,charge
+                busname, drivername, conductorname, dvrivernob, conductornob, totalstdnt, busroute,
+                stuname, stuaddress, fname, picpoint, distance, pictime, charge
             }
             ));
             setBusname("");
@@ -62,36 +64,49 @@ const TransPortForm = () => {
 
     return (
         <>
+            <MainLayout />
+
+            <Container style={{ width: "90%" }} >
+                <Table striped bordered hover className='main-table'>
+                    <thead>
+                        <tr>
+                            <th><h5><AiFillDashboard /> &nbsp;Dasboard / Add Transportation</h5></th>
+                        </tr>
+                    </thead>
+                </Table>
+                <Row>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div className='table-div'>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <IoIosCreate />&nbsp;<Link to="/tranportlist">Go Back</Link>
+                                        </Button>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillEdit />&nbsp;Bulk Edit
+                                        </Button>
+
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillDelete />&nbsp;Bulk Delete
+                                        </Button>
+
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </Table>
+                    <hr />
+                </Row>
+            </Container>
 
 
-            <p className='dasfee'>Dasboard / Add Transportation</p>
-            <div className='M-div'>
-                <div className='dfelx'>
-                    <Link to="/tranportlist ">
-                        <button className='btns'>
-                        <span style={{marginLeft:"-10px"}}><RiArrowGoBackLine/></span>
-                            Go Back</button>
-                    </Link>
-                    <button className='next-btn'>
-                        <span style={{marginLeft:"-10px"}}>  <AiFillSetting /></span>
-                      
-                        Setting
-                    </button>
-                    <button className='next-btn'>
-                        <AiFillEdit />
-                        Edit
-                    </button>
-                    <button className='next-btn'>
-                        <span style={{marginLeft:"-10px"}}><AiFillDelete /></span>
-                        
-                        Delete
-                    </button>
-                </div>
-            </div>
 
 
 
-            <div style={{ padding: "40px", border: "1px solid", margin: "10px",marginTop:"50px" }}>
+            <div style={{ padding: "40px", border: "1px solid", margin: "10px", marginTop: "50px" }}>
 
                 <Form onSubmit={handleSubmit}>
                     <Container className="main-form">
@@ -188,7 +203,7 @@ const TransPortForm = () => {
 
 
 
-                            
+
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label">Pic Point </label>
                                 <input type="text" className="form-control"
@@ -196,7 +211,7 @@ const TransPortForm = () => {
                                     onChange={(event) => setPicpoint(event.target.value)}
                                 />
                             </div>
-                            
+
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label">Pic Time </label>
                                 <input type="text" className="form-control"
@@ -204,7 +219,7 @@ const TransPortForm = () => {
                                     onChange={(event) => setPictime(event.target.value)}
                                 />
                             </div>
-                            
+
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label"> Distance</label>
                                 <input type="text" className="form-control"
@@ -212,7 +227,7 @@ const TransPortForm = () => {
                                     onChange={(event) => setDistance(event.target.value)}
                                 />
                             </div>
-                            
+
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label">Charges</label>
                                 <input type="text" className="form-control"

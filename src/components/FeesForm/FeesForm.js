@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row, Table } from 'react-bootstrap'
 import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -9,8 +9,9 @@ import { addfees } from '../Redux/Slice/action';
 import '../../App.css'
 import MainLayout from '../Layouts/MainLayout';
 import { Link } from 'react-router-dom';
-import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
+import { AiFillDashboard, AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
 import { RiArrowGoBackLine } from 'react-icons/ri';
+import { IoIosCreate } from 'react-icons/io';
 
 const FeesForm = () => {
 
@@ -71,33 +72,50 @@ const FeesForm = () => {
         <>
             <MainLayout />
 
-            <p className='dasfee'>Dasboard / Add Student Fees Form</p>
-            <div className='M-div'>
-                <div className='dfelx'>
-                    <Link to="/feeslist ">
-                        <button className='btns'>
-                        <span style={{marginLeft:"-10px"}}><RiArrowGoBackLine/></span>
-                            Go Back</button>
-                    </Link>
-                    <button className='next-btn'>
-                        <span style={{marginLeft:"-10px"}}><AiFillSetting/></span>
-                        Setting
-                    </button>
-                    <button className='next-btn'>
-                        <AiFillEdit />
-                        Edit
-                    </button>
-                    <button className='next-btn'>
-                    <span style={{marginLeft:"-10px"}}><AiFillDelete /></span>
+            <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard / Add Student Fees Form</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div'>
+                
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/feeslist">Go Back</Link>
+                    </Button>
 
-                     
-                        Delete
-                    </button>
-                </div>
-            </div>
-            <div style={{ padding: "20px", border: "1px solid", margin: "10px", marginTop: "50px" }}>
+                    <Button className='table-btn'  variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
+
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+                    
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
+
+
+
+
+
+
+            <div className='post-table'>
                 <Form onSubmit={handleSubmit}>
-                    <Container className="main-form">
+                    <Container >
                         <Row>
 
                             <div className="col-sm-4 mt-3 position-relative">

@@ -3,12 +3,13 @@ import { useSelector, useDispatch } from 'react-redux'
 // import { fetchfFeses } from '../Slice/action'
 import { fetchfFeses } from '../Redux/Slice/action'
 import Fees from './Fees'
-import { Table } from 'react-bootstrap'
+import { Button, Container, Row, Table } from 'react-bootstrap'
 import ModalCamp from './ModalCamp '
 import MainLayout from '../Layouts/MainLayout'
 import '../../App.css'
 import { Link } from 'react-router-dom'
-import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai'
+import { AiFillDashboard, AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai'
+import { IoIosCreate } from 'react-icons/io'
 
 
 
@@ -39,33 +40,45 @@ const FeesList = () => {
   return (
     <>
       <MainLayout />
-      <p className='dasfee'>Dasboard /View Student Fees Details</p>
-      <div className='M-div'>
-        <div className='dfelx'>
-          <Link to="/fees ">
-            <button className='btns'>+ Create</button>
-          </Link>
-          <button className='next-btn'>
-           <span style={{marginLeft:"-10px"}}> <AiFillSetting /></span>
-            Setting
-          </button>
-          <button className='next-btn'>
-           <span style={{marginLeft:"-10px"}}>  <AiFillEdit /></span>
-           
-            Edit
-          </button>
-          <button className='next-btn'>
-           <span style={{marginLeft:"-10px"}}><AiFillDelete /></span>
-           
-            Delete
-          </button>
-        </div>
-      </div>
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard /View Student Fees Details</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div'>
+                
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/fees">Go Back</Link>
+                    </Button>
 
+                    <Button className='table-btn'  variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
 
-      <p className='add'
-      > View Student Fees Details</p>
-      <br />
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+                    
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
+
+    
+
+    
 
       <div className='post-table'>
         <h2 className="w3-center w3-flat-midnight-blue w3-padding-48 w3-border-blue-grey w3-grey text text-center mb-5 mt-3">Student Fees  Details</h2>
@@ -85,7 +98,7 @@ const FeesList = () => {
                 {/* <th>Father Name</th>
                 <th>Mother Name</th> */}
                 <th>Veiw</th>
-                <th>Active</th>
+             
               </tr>
             </thead>
 

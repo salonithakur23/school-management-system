@@ -12,10 +12,7 @@ const Fees = ({ fees }) => {
   const dispatch = useDispatch();
 
 
-  const [isActive, setIsActive] = useState(false);
-  const handleClick = () => {
-    setIsActive(!isActive);
-  }
+ 
 
 
   const handleModel = () => {
@@ -39,15 +36,6 @@ const Fees = ({ fees }) => {
     <>
 
       <tbody>
-
-        {isActive ?
-          <div style={{ width: "100%" }}>
-            <center>
-              <p>This student is not available at the moment:</p>
-            </center>
-          </div>
-
-          :
           <tr>
 
             {/* <td>{fees.id}</td> */}
@@ -94,11 +82,9 @@ const Fees = ({ fees }) => {
             </Link>
             
             </td> */}
-            <td>
-              <button onClick={handleClick} >Active</button>
-            </td>
+          
           </tr>
-        }
+       
 
       </tbody>
 

@@ -94,7 +94,6 @@ const Detail = ({ detail }) => {
             <ModalComp
               open={open}
               setOpen={setOpen}
-              // handleDelete={handleDelete}
               {...user}
             />
           )}

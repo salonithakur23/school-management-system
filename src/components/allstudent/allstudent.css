@@ -8,6 +8,11 @@
 .spantext{
     margin-left: -10px;
   }
+  .form-div{
+    padding: 20px;
+    border: solid 1px ;
+    margin: 10px;
+  }
 
 
 
@@ -20,10 +25,10 @@
 
 
 @media screen and (min-width: 300px) and (max-width: 922px) {
-    .main-form {
+    /* .main-form {
       padding: 20px 10px 20px 10px !important;
       
-    }
+    } */
     .addCa{
       /* margin: auto; */
       margin-left: 100px;

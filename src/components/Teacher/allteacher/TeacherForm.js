@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { Button, Container, Table } from 'react-bootstrap';
+import { Button, Container, Row, Table } from 'react-bootstrap';
 import { AiFillDashboard  ,AiFillEdit ,AiFillDelete} from "react-icons/ai";
 // import '../../../style/main.css'
 import '../../../App.css'
@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { adddetail } from '../../Redux/TeacherSlice/action';
 import MainLayout from '../../Layouts/MainLayout';
+import { IoIosCreate } from 'react-icons/io';
 
 
 
@@ -90,10 +91,46 @@ const TeacherForm = () => {
 
       <MainLayout />
 
-      <Table striped bordered hover style={{ textAlign: "left" }}>
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dashboard / Teacher-form</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div'>
+                
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/detaillist">Go Back</Link>
+                    </Button>
+
+                    <Button className='table-btn'  variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
+
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+                    
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
+
+      {/* <Table striped bordered hover style={{ textAlign: "left" }}>
         <thead>
           <tr>
-            <th><h5><AiFillDashboard /> &nbsp; Dashboard / Teacher-form</h5></th>
+            <th><h5><AiFillDashboard /> &nbsp; </h5></th>
           </tr>
         </thead>
       </Table>
@@ -121,28 +158,20 @@ const TeacherForm = () => {
                 </th>
               </tr>
             </thead>
-          </Table>
+          </Table> */}
 
       <div className='form-div'  >
-
         <Container>
-
-
           <form className="row g-4 p-3   registration-form  " onSubmit={handleSubmit} >
             {/* <h2 className='text-center  mb-5 '>Teacher Registration from</h2> */}
 
 
 
-            {/* <div class="col-sm-4 position-relative">
-    <label className="label">Image</label>
-    <input type="url" class="form-control" value={image1} onChange={(event) => setImage1(event.target.value)} />
-  </div> */}
-
+   
 
             <div class="col-md-4 position-relative">
               <label className="label">First name</label>
               <input type="text" class="form-control" value={firstname1} onChange={(event) => setFirstname1(event.target.value)} required />
-              {/* {firstname.length==0 && <span className='text-danger'>Enter the name</span>} */}
             </div>
 
 

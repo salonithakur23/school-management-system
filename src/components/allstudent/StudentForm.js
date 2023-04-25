@@ -8,6 +8,8 @@ import MainLayout from '../Layouts/MainLayout';
 import { Link } from 'react-router-dom';
 import { AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
 import { RiArrowGoBackLine } from 'react-icons/ri';
+import { RiArrowGoBackFill } from "react-icons/ri";
+import { IoIosCreate } from 'react-icons/io';
 
 
 
@@ -88,39 +90,54 @@ const StudentForm = () => {
     <>
 
       <MainLayout />
-      <p className='dasfee'>Dasboard / Add Student Form </p>
-      <div className='M-div'>
-        <div className='dfelx'>
-          <Link to="/studentlist ">
-            <button className='btns'>
-            <span className='spantext'><RiArrowGoBackLine/></span>
-              Go Back</button>
-          </Link>
-          <button className='next-btn'>
-         
-            <span className='spantext'>   <AiFillSetting /></span>
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp; Dashboard/ Student-Form</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div'>
+                
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/studentlist">Go Back</Link>
+                    </Button>
 
-            Setting
-          </button>
-          <button className='next-btn'>
-          <span className='spantext'><AiFillEdit /></span>
+                    <Button className='table-btn'  variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
 
-           
-            Edit
-          </button>
-          <button className='next-btn'>
-          <span className='spantext'> <AiFillDelete /></span>
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+                    
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
 
-           
-            Delete
-          </button>
-        </div>
-      </div>
-   
-      <div style={{ padding: "20px", border: "1px solid", margin: "10px",marginTop:"50px" }}>
+
+    
+
+
+
+
+
+
+      <div className='form-div'>
 
         <Form onSubmit={handleSubmit}>
-          <Container className="main-form">
+          <Container>
             <Row>
 
               <div className="col-sm-4 mt-3 position-relative">
@@ -199,7 +216,7 @@ const StudentForm = () => {
 
 
               <div className="col-md-4 mt-3  position-relative">
-                <label className="label">Board</label>
+                <label className="form-label">Board</label>
                 <input type="text" className="form-control"
                   value={board} onChange={(event) => setBoard(event.target.value)}
                 />
