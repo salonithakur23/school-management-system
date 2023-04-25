@@ -62,45 +62,44 @@ const ResultForm = () => {
 
     return (
         <>
-            <MainLayout />
-            <Container style={{ width: "90%" }} >
-                <Table striped bordered hover className='main-table'>
-                    <thead>
-                        <tr>
-                            <th><h5><AiFillDashboard /> &nbsp;Dasboard / Add Result Information</h5></th>
-                        </tr>
-                    </thead>
-                </Table>
-                <Row>
-                    <Table striped bordered hover>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <div className='table-div'>
+        <MainLayout />
+        <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard / Add Result Information</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div' >
+                 
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/resultlist">Go back</Link>
+                    </Button>
 
-                                        <Button className='table-btn' variant="light" >
-                                            <IoIosCreate />&nbsp;<Link to="/resultlist">Go Back</Link>
-                                        </Button>
+                    <Button className='table-btn' variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
 
-                                        <Button className='table-btn' variant="light" >
-                                            <AiFillEdit />&nbsp;Bulk Edit
-                                        </Button>
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+                    
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
 
-                                        <Button className='table-btn' variant="light" >
-                                            <AiFillDelete />&nbsp;Bulk Delete
-                                        </Button>
-
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                    </Table>
-                    <hr />
-                </Row>
-            </Container>
-
-
-
+           
             <div className='resultform'
 
             >

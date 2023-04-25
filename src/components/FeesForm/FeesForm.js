@@ -72,48 +72,45 @@ const FeesForm = () => {
         <>
             <MainLayout />
 
+            
             <Container style={{ width: "90%" }} >
-        <Table striped bordered hover className='main-table'>
-          <thead>
-            <tr>
-              <th><h5><AiFillDashboard /> &nbsp;Dasboard / Add Student Fees Form</h5></th>
-            </tr>
-          </thead>
-        </Table>
-        <Row>
-          <Table striped bordered hover>
-            <thead>
-              <tr>
-                <th>
-                  <div className='table-div'>
-                
-                    <Button className='table-btn' variant="light" >
-                      <IoIosCreate />&nbsp;<Link to="/feeslist">Go Back</Link>
-                    </Button>
+                <Table striped bordered hover className='main-table'>
+                    <thead>
+                        <tr>
+                            <th><h5><AiFillDashboard /> &nbsp;Dasboard / Add Student Fees Form</h5></th>
+                        </tr>
+                    </thead>
+                </Table>
+                <Row>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div className='table-div' >
 
-                    <Button className='table-btn'  variant="light" >
-                      <AiFillEdit />&nbsp;Bulk Edit
-                    </Button>
+                                        <Button className='table-btn' variant="light" >
+                                            <IoIosCreate />&nbsp;<Link to="/feeslist">Go back</Link>
+                                        </Button>
 
-                    <Button className='table-btn' variant="light" >
-                      <AiFillDelete />&nbsp;Bulk Delete
-                    </Button>
-                    
-                  </div>
-                </th>
-              </tr>
-            </thead>
-          </Table>
-          <hr />
-        </Row>
-      </Container>
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillEdit />&nbsp;Bulk Edit
+                                        </Button>
 
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillDelete />&nbsp;Bulk Delete
+                                        </Button>
 
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </Table>
+                    <hr />
+                </Row>
+            </Container>
 
-
-
-
-            <div className='post-table'>
+         
+            <div style={{ padding: "20px", border: "1px solid", margin: "10px", marginTop: "50px" }}>
                 <Form onSubmit={handleSubmit}>
                     <Container >
                         <Row>

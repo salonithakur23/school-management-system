@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import MainLayout from '../Layouts/MainLayout'
 import { Link } from 'react-router-dom';
 import { AiFillDashboard, AiFillDelete, AiFillEdit, AiFillSetting } from 'react-icons/ai';
@@ -21,16 +21,16 @@ const AttendanceForm = () => {
     const [date, setDate] = useState("");
 
     const handleSubmit = (event) => {
-        event.preventDefault();  
-        if (rollno && stuname && date ) {
+        event.preventDefault();
+        if (rollno && stuname && date) {
             dispatch(addAttendace({
-                rollno, stuname,date
+                rollno, stuname, date
             }
             ));
             setRollno("");
             setStuname("");
             setDate("");
-           
+
         }
     }
     return (
@@ -38,62 +38,41 @@ const AttendanceForm = () => {
             <MainLayout />
 
             <Container style={{ width: "90%" }} >
-        <Table striped bordered hover className='main-table'>
-          <thead>
-            <tr>
-              <th><h5><AiFillDashboard /> &nbsp; Dasboard / Add Student  Attendance Form</h5></th>
-            </tr>
-          </thead>
-        </Table>
-        <Row>
-          <Table striped bordered hover>
-            <thead>
-              <tr>
-                <th>
-                  <div className='table-div'>
-                
-                    <Button className='table-btn' variant="light" >
-                      <IoIosCreate />&nbsp;<Link to="/attendanceList">Go Back</Link>
-                    </Button>
+                <Table striped bordered hover className='main-table'>
+                    <thead>
+                        <tr>
+                            <th><h5><AiFillDashboard /> &nbsp;Dasboard / Add Student  Attendance Form</h5></th>
+                        </tr>
+                    </thead>
+                </Table>
+                <Row>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div className='table-div' >
 
-                    <Button className='table-btn'  variant="light" >
-                      <AiFillEdit />&nbsp;Bulk Edit
-                    </Button>
+                                        <Button className='table-btn' variant="light" >
+                                            <IoIosCreate />&nbsp;<Link to="/attendanceList">Go back</Link>
+                                        </Button>
 
-                    <Button className='table-btn' variant="light" >
-                      <AiFillDelete />&nbsp;Bulk Delete
-                    </Button>
-                    
-                  </div>
-                </th>
-              </tr>
-            </thead>
-          </Table>
-          <hr />
-        </Row>
-      </Container>
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillEdit />&nbsp;Bulk Edit
+                                        </Button>
 
-            {/* <p className='dasfee'>Dasboard / Add Student  Attendance Form</p>
-            <div className='M-div'>
-                <div className='dfelx'>
-                    <Link to="/attendanceList ">
-                    <button className='btns'>   <span  className='spantext'><RiArrowGoBackLine/></span>Go Back</button>
-                    </Link>
-                    <button className='next-btn'>
-                     
-                        <span  className='spantext'><AiFillSetting /></span>
-                        Setting
-                    </button>
-                    <button className='next-btn'>
-                        <AiFillEdit />
-                        Edit
-                    </button>
-                    <button className='next-btn'>
-                    <span  className='spantext'>   <AiFillDelete /></span>
-                        Delete
-                    </button>
-                </div>
-            </div> */}
+                                        <Button className='table-btn' variant="light" >
+                                            <AiFillDelete />&nbsp;Bulk Delete
+                                        </Button>
+
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </Table>
+                    <hr />
+                </Row>
+            </Container>
+
 
 
 
@@ -114,17 +93,17 @@ const AttendanceForm = () => {
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label">Class Name</label>
                                 <input type="text" className="form-control"
-                                     value={stuname}
-                                     onChange={(event) => setStuname(event.target.value)}
+                                    value={stuname}
+                                    onChange={(event) => setStuname(event.target.value)}
                                 />
                             </div>
 
                             <div className="col-md-4 mt-3  position-relative">
                                 <label className="label">Date</label>
                                 <input type="date" className="form-control"
-                                  value={date}
-                                  onChange={(event) => setDate(event.target.value)}
-                                  
+                                    value={date}
+                                    onChange={(event) => setDate(event.target.value)}
+
                                 />
 
                             </div>
@@ -178,7 +157,7 @@ const AttendanceForm = () => {
                     </Button>
                 </Form>
             </div> */}
-            
+
 
         </>
     )

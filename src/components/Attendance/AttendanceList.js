@@ -75,58 +75,50 @@ const AttendanceList = () => {
     return (
         <>
             <MainLayout />
+
             <Container style={{ width: "90%" }} >
-                <Table striped bordered hover className='main-table'>
-                    <thead>
-                        <tr>
-                            <th><h5><AiFillDashboard /> &nbsp; Dasboard / View Student  Attendance Page</h5></th>
-                        </tr>
-                    </thead>
-                </Table>
-                <Row
-                >
-                    <Table striped bordered hover>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <div className='table-div'>
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard / View Student  Attendance Page</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div' >
+                 
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/attendance">Create</Link>
+                    </Button>
 
-                                        <Button className='table-btn' variant="light" >
-                                            <IoIosCreate />&nbsp;<Link to="/attendance">Create</Link>
-                                        </Button>
+                    <Button className='table-btn' variant="light" >
+                      <AiFillEdit />&nbsp;Bulk Edit
+                    </Button>
 
-                                        <Button className='table-btn' variant="light" >
-                                            <AiFillEdit />&nbsp;Bulk Edit
-                                        </Button>
-
-                                        <Button className='table-btn' variant="light" >
-                                            <AiFillDelete />&nbsp;Bulk Delete
-                                        </Button>
-
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                    </Table>
-                    <hr />
-                </Row>
-            </Container>
-
-
-          
+                    <Button className='table-btn' variant="light" >
+                      <AiFillDelete />&nbsp;Bulk Delete
+                    </Button>
+                    
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </Table>
+          <hr />
+        </Row>
+      </Container>
            
             <div className='d-flex'>
                 <div style={{ width: "20%", height: "20px", marginLeft: "50px", marginTop: "30px" }}>
-                  
-                    <input
-                        style={{ height: "40px", marginLeft: "-20px" }}
-                        type='text'
-                        placeholder='Class Teacher Name'
-                    />
-
-                    <div className='show'>
-
-                    </div>
+                    <input  
+                    style={{height:"40px",marginLeft:"-20px"}}
+                     type='text'
+                     placeholder='Class Teacher Name'
+                      /> 
                 </div>
 
                 <div style={{ width: "20%", height: "20px", marginTop: "30px" }}>
@@ -149,11 +141,11 @@ const AttendanceList = () => {
 
 
                 </div>
-
-
-                <input style={{ width: "20%", height: "40px", marginTop: "30px", marginLeft: "30px" }}
-                    type="date"
-                />
+                
+              
+                    <input style={{width:"20%",height:"40px",marginTop:"30px",marginLeft:"30px"}}
+                        type="date"
+                    />
             </div>
             <div style={{
                 width: "90%",

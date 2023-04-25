@@ -20,6 +20,17 @@ const Sidebar = ({children}) => {
       name: "Dashboard",
       icon: <FaTh />
     },
+    {
+      path: "/student",
+      name: "StudentForm",
+      icon: <AiOutlineOrderedList />
+    },
+    {
+      path: "/teacherform",
+      name: "Teacher",
+      icon: <GiArchiveRegister />,
+    },
+   
 
     {
       path: "/fees",
@@ -27,18 +38,7 @@ const Sidebar = ({children}) => {
       icon: <FaWpforms />
     },
     
-    {
-      path: "/student",
-      name: "StudentForm",
-      icon: <AiOutlineOrderedList />
-    },
-   
-    // {
-    //   path: "/Registration",
-    //   name: "Registraion",
-    //   icon: <MdOutlineAppRegistration />
-    // },
-
+  
     {
       path: "/attendance",
       name: "AttendanceFrom",
@@ -60,11 +60,7 @@ const Sidebar = ({children}) => {
       icon: <BsFillBookFill />
     },
 
-    {
-      path: "/teacherform",
-      name: "Teacher",
-      icon: <GiArchiveRegister />,
-    },
+  
 
     {
       path: "/timetable",

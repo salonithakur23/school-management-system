@@ -94,13 +94,7 @@ const ModalComp = ({
               <div className="mod-img" > </div>
               <p className="img-text"> Image of student</p>
 
-              <div >
-          
-
-                <Button variant="danger" className="edit-btn" >Edit </Button>
-
-
-              </div>
+              <Button className="edit-btn">Edit</Button>
             </Col>
 
           </Row>

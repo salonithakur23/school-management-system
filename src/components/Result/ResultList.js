@@ -39,6 +39,7 @@ const ResultList = () => {
   return (
     <>
       <MainLayout />
+
       <Container style={{ width: "90%" }} >
         <Table striped bordered hover className='main-table'>
           <thead>
@@ -52,20 +53,20 @@ const ResultList = () => {
             <thead>
               <tr>
                 <th>
-                  <div className='table-div'>
-                
+                  <div className='table-div' >
+
                     <Button className='table-btn' variant="light" >
-                      <IoIosCreate />&nbsp;<Link to="/resultform">Create</Link>
+                      <IoIosCreate />&nbsp;<Link to="/student">Go back</Link>
                     </Button>
 
-                    <Button className='table-btn'  variant="light" >
+                    <Button className='table-btn' variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
                     </Button>
 
                     <Button className='table-btn' variant="light" >
                       <AiFillDelete />&nbsp;Bulk Delete
                     </Button>
-                    
+
                   </div>
                 </th>
               </tr>
@@ -75,70 +76,41 @@ const ResultList = () => {
         </Row>
       </Container>
 
-      {/* <p className='dasfee'>Dasboard /View Student Result Page</p>
-      <div className='M-div'>
-        <div className='dfelx'>
-          <Link to="/resultform ">
-            <button className='btns'>+ Create</button>
-          </Link>
-          <button className='next-btn'>
-          <span className='spantext'>  <AiFillSetting /></span>
-            Setting
-          </button>
-          <button className='next-btn'>
-            <AiFillEdit />
-            Edit
-          </button>
-          <button className='next-btn'>
-          <span className='spantext'><AiFillDelete /></span>
-            Delete
-          </button>
-        </div>
-      </div>
-      <p className='add'
-      > View Student Result Details</p>
-      <br /> */}
-     
-
-
-
-   
 
       <div className='post-table'>
-        <h2 className="w3-center w3-flat-midnight-blue w3-padding-48 w3-border-blue-grey w3-grey text text-center mb-5 mt-3">Student Result  Details</h2>
-
-        <h1></h1>
+        <h2 className="w3-center w3-flat-midnight-blue w3-padding-48
+         w3-border-blue-grey w3-grey text text-center mb-5 mt-3">Student Result  Details</h2>
         <Table responsive striped bordered hover>
 
-        <Table responsive striped bordered hover >
-        <table class="table table-bordered border-secondary">
-            <thead>
+          <Table responsive striped bordered hover >
+            <table class="table table-bordered border-secondary">
+              <thead>
                 <tr>
-                    <th>Student Name</th>
-                    <th>Class Name </th>
-                    <th>Roll No  </th>
-                    <th>DOB</th>
-                    <th>Father Name</th>
-                    <th>Mother Name</th>
-                    <th>Residential Address </th>
+                  <th>Student Name</th>
+                  <th>Class Name </th>
+                  <th>Roll No  </th>
+                  <th>DOB</th>
+                  <th>Father Name</th>
+                  <th>Mother Name</th>
+                  <th>Residential Address </th>
                 </tr>
                 <tr>
-                    <td>Saloni Thakur</td>
-                    <td>2nd</td>
-                    <td>4</td>
-                    <td>10/03/1998</td>
-                    <td>Suresh Singh</td>
-                    <td>Omwati Devi</td>
-                    <td>Linepar Chau ki wasti</td>
+                  <td>Saloni Thakur</td>
+                  <td>2nd</td>
+                  <td>4</td>
+                  <td>10/03/1998</td>
+                  <td>Suresh Singh</td>
+                  <td>Omwati Devi</td>
+                  <td>Linepar Chau ki wasti</td>
 
                 </tr>
-            
-            </thead>
+
+              </thead>
             </table>
           </Table>
           <table class="table table-bordered border-secondary">
             <thead>
-            <tr>
+              <tr>
                 <th>Subject Name</th>
                 <th>SUMMER Assig. (10)</th>
                 <th>Unit-I (20)</th>
@@ -151,7 +123,7 @@ const ResultList = () => {
                 <th>Annual Exam </th>
                 <th>Total(100)</th>
                 <th>Grand Total(200)</th>
-                <th>view</th>
+                {/* <th>view</th> */}
               </tr>
             </thead>
 
@@ -164,7 +136,7 @@ const ResultList = () => {
 
 
 
-    
+
 
     </>
   )

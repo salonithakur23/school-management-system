@@ -73,13 +73,13 @@ const SalleryForm = () => {
             <thead>
               <tr>
                 <th>
-                  <div className='table-div'>
-                
+                  <div className='table-div' >
+                 
                     <Button className='table-btn' variant="light" >
-                      <IoIosCreate />&nbsp;<Link to="/sallerylist">Go Back</Link>
+                      <IoIosCreate />&nbsp;<Link to="/sallerylist">Create</Link>
                     </Button>
 
-                    <Button className='table-btn'  variant="light" >
+                    <Button className='table-btn' variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
                     </Button>
 
@@ -96,6 +96,9 @@ const SalleryForm = () => {
         </Row>
       </Container>
 
+ 
+
+     
 
 
           <div className='form-div'  >

@@ -138,17 +138,15 @@ const TeacherForm = () => {
             <thead>
               <tr>
                 <th>
-                  <div className='table-div'>
-          
-            
+                  <div className='table-div' >
+                 
                     <Button className='table-btn' variant="light" >
-                      <RiArrowGoBackFill />&nbsp;<Link to="/detaillist">Go Back</Link>
+                      <IoIosCreate />&nbsp;<Link to="/detaillist">Create</Link>
                     </Button>
-
 
                     <Button className='table-btn' variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
-                    </Button >
+                    </Button>
 
                     <Button className='table-btn' variant="light" >
                       <AiFillDelete />&nbsp;Bulk Delete
@@ -167,7 +165,8 @@ const TeacherForm = () => {
 
 
 
-   
+      
+
 
             <div class="col-md-4 position-relative">
               <label className="label">First name</label>

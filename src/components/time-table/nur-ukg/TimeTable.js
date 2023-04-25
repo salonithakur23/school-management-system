@@ -135,12 +135,11 @@ const TimeTable = () => {
   return (
     <>
       <MainLayout />
-
       <Container style={{ width: "90%" }} >
         <Table striped bordered hover className='main-table'>
           <thead>
             <tr>
-              <th><h5><AiFillDashboard /> &nbsp; Dashboard / Time-Table</h5></th>
+              <th><h5><AiFillDashboard /> &nbsp;Dashboard / Time-Table</h5></th>
             </tr>
           </thead>
         </Table>
@@ -149,13 +148,13 @@ const TimeTable = () => {
             <thead>
               <tr>
                 <th>
-                  <div className='table-div'>
-                
+                  <div className='table-div' >
+                 
                     <Button className='table-btn' variant="light" >
-                      <IoIosCreate />&nbsp;<Link to="/tablelist">Go Back</Link>
+                      <IoIosCreate />&nbsp;<Link to="/tablelist">Create</Link>
                     </Button>
 
-                    <Button className='table-btn'  variant="light" >
+                    <Button className='table-btn' variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
                     </Button>
 
@@ -178,6 +177,7 @@ const TimeTable = () => {
 
       
 
+     
       <div className='form-div'>
 
         <form onSubmit={handleSubmit}>

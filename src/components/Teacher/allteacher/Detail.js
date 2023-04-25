@@ -39,7 +39,6 @@ const Detail = ({ detail }) => {
   }
 
 
-
   return (
     <>
 

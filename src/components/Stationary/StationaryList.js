@@ -61,7 +61,26 @@ const StationaryList = () => {
                       <IoIosCreate />&nbsp;<Link to="/stationaryform">Create</Link>
                     </Button>
 
-                    <Button className='table-btn'  variant="light" >
+      <Container style={{ width: "90%" }} >
+        <Table striped bordered hover className='main-table'>
+          <thead>
+            <tr>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard /View TransPortation</h5></th>
+            </tr>
+          </thead>
+        </Table>
+        <Row>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>
+                  <div className='table-div' >
+                 
+                    <Button className='table-btn' variant="light" >
+                      <IoIosCreate />&nbsp;<Link to="/stationaryform">Create</Link>
+                    </Button>
+
+                    <Button className='table-btn' variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
                     </Button>
 

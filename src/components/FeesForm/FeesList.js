@@ -40,6 +40,7 @@ const FeesList = () => {
   return (
     <>
       <MainLayout />
+
       <Container style={{ width: "90%" }} >
         <Table striped bordered hover className='main-table'>
           <thead>
@@ -53,20 +54,20 @@ const FeesList = () => {
             <thead>
               <tr>
                 <th>
-                  <div className='table-div'>
-                
+                  <div className='table-div' >
+
                     <Button className='table-btn' variant="light" >
-                      <IoIosCreate />&nbsp;<Link to="/fees">Go Back</Link>
+                      <IoIosCreate />&nbsp;<Link to="/fees">Go back</Link>
                     </Button>
 
-                    <Button className='table-btn'  variant="light" >
+                    <Button className='table-btn' variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
                     </Button>
 
                     <Button className='table-btn' variant="light" >
                       <AiFillDelete />&nbsp;Bulk Delete
                     </Button>
-                    
+
                   </div>
                 </th>
               </tr>

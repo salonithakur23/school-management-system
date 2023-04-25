@@ -36,12 +36,11 @@ const StudentList = () => {
   return (
     <>
       <MainLayout />
-
       <Container style={{ width: "90%" }} >
         <Table striped bordered hover className='main-table'>
           <thead>
             <tr>
-              <th><h5><AiFillDashboard /> &nbsp; Dashboard/ Student-List</h5></th>
+              <th><h5><AiFillDashboard /> &nbsp;Dasboard / View student List </h5></th>
             </tr>
           </thead>
         </Table>
@@ -50,20 +49,20 @@ const StudentList = () => {
             <thead>
               <tr>
                 <th>
-                  <div className='table-div'>
-                
+                  <div className='table-div' >
+
                     <Button className='table-btn' variant="light" >
-                      <IoIosCreate />&nbsp;<Link to="/student">Create</Link>
+                      <IoIosCreate />&nbsp;<Link to="/student">Go back</Link>
                     </Button>
 
-                    <Button className='table-btn'  variant="light" >
+                    <Button className='table-btn' variant="light" >
                       <AiFillEdit />&nbsp;Bulk Edit
                     </Button>
 
                     <Button className='table-btn' variant="light" >
                       <AiFillDelete />&nbsp;Bulk Delete
                     </Button>
-                    
+
                   </div>
                 </th>
               </tr>
@@ -72,37 +71,7 @@ const StudentList = () => {
           <hr />
         </Row>
       </Container>
-
-
-
-
-
-
-
-
-      {/* <p className='dasfee'>Dasboard / View student List </p>
-      <div className='M-div'>
-        <div className='dfelx'>
-          <Link to="/student ">
-            <button className='btns'> + Create</button>
-          </Link>
-          <button className='next-btn'>
-          <span className='spantext'><AiFillSetting /></span>
-          
-            Setting
-          </button>
-          <button className='next-btn'>
-           <span className='spantext'>   <AiFillEdit /></span>
-         
-            Edit
-          </button>
-          <button className='next-btn'>
-           <span className='spantext'><AiFillDelete /></span>
-            Delete
-          </button>
-        </div>
-      </div> */}
-
+   
 
 
       <div className='post-table'>

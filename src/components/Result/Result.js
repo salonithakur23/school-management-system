@@ -39,17 +39,7 @@ const Result = ({ result }) => {
     <>
 
       <tbody>
-
-        {isActive ?
-          <div style={{ width: "100%" }}>
-            <center>
-              <p>This student is not available at the moment:</p>
-            </center>
-          </div>
-
-          :
-          <tr>
-            
+        <tr>
             <td>{result.subname}</td>
             <td>{result.sumassgn}</td>
             <td>{result.pd1}</td>
@@ -64,7 +54,7 @@ const Result = ({ result }) => {
             <td>{result.grntotal}</td>
             {/* <td>{result.grade}</td> */}
 
-            <td>
+            {/* <td>
               <button style={{
                 backgroundColor: "gray",
                 width: "100px",
@@ -82,9 +72,9 @@ const Result = ({ result }) => {
                 setOpen={setOpen}
                 {...user}
               />
-            )}
+            )} */}
           </tr>
-        }
+     
 
       </tbody>
 
